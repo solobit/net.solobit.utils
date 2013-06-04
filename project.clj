@@ -27,6 +27,10 @@
                  [enlive "1.1.1"]
                  [fipp "0.3.0"]
                  [matchure "0.10.1"]
+                 [clojure-opennlp "0.1.10"
+                  :exclusions [org.clojure/clojure]]
+                 [org.clojars.gnarmis/snowball-stemmer
+                  "0.1.1-SNAPSHOT"]
                  [org.clojure/core.unify "0.5.5"
                   :exclusions [org.clojure/clojure]]
                  [org.clojure/algo.monads "0.1.4"
