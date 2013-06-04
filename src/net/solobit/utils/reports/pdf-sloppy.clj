@@ -150,7 +150,7 @@
    [:paragraph "yet more text"]]
 
 
-  "doc.pdf")
+  "test/sloppydoc.pdf")
 
 (def employees
   [{:country "Germany",

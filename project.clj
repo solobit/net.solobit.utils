@@ -11,6 +11,10 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
+
+  ;; These categories may or may not be reflected in the namespace structure
+  ;; of this project. Some dependencies will be used all over the project,
+  ;; others are of specific appliance in some sub-domain of the problem/solution.
   :dependencies [
 
                  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -25,8 +29,9 @@
                  ;; Support tools
                  ;;
 
+                 [commons-io "2.4"] ; ?
                  [slingshot "0.10.3"] ; better try..catch
-
+                 [lein-annotations "0.1.0"] ; show comments/annotations
                  [com.cemerick/pomegranate "0.2.0"
                   :exclusions [[commons-codec] [commons-io]
                                [org.apache.httpcomponents/httpcore]
@@ -38,9 +43,12 @@
 
                  [net.mikera/core.matrix "0.7.2"]
                  [org.clojure/data.generators "0.1.0"]
+                 [org.clojure/data.csv "0.1.2"]
+                 [jackknife "0.1.2"] ; Useful clojure utilities.
                  [enlive "1.1.1"] ; screen scraping
                  [matchure "0.10.1"] ; pattern matching
                  [cheshire "5.2.0"] ; JSON fast
+                 [clj-tagsoup "0.3.0"] ; parse (malformed) HTML
 
                  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
                  ;; Rendering, parsers, readers
@@ -76,13 +84,15 @@
                  [cc.artifice/clj-ml "0.3.5"]
 
                  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;; Lambda, math, statistics
+                 ;; λ Lambda, math, statistics
                  ;;
 
                  ;; monads -<>
                  [swiss-arrows "0.6.0"]
                  [org.clojure/algo.monads "0.1.4" :exclusions
                   [[org.clojure/tools.macro] org.clojure/clojure]]
+                 ;; statistics and graphics
+                 [incanter "1.4.1" :exclusions [junit]]
 
                  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
                  ;; Platform and file / operating systems

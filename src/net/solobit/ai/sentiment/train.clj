@@ -6,15 +6,15 @@
         [clojure.pprint]
         [clojure.java.io]))
 
-(def tokenizer (make-tokenizer "src/net/solobit/ai/models/en-token.bin"))
-(def senti-model (train-document-categorization "src/net/solobit/ai/models/sentiment.train"))
+(def tokenizer (make-tokenizer "src/net/solobit/ai/sentiment/models/en-token.bin"))
+(def senti-model (train-document-categorization "src/net/solobit/ai/sentiment/models/sentiment.train"))
 
 (defn get-lines [fname]
   (with-open [r (reader fname)]
     (doall (line-seq r))))
 
 (defn temp-corpus []
-	(get-lines "resources/ai/subjectivity_lexicon.tff"))
+	(get-lines "resources/ai/sentiment/subjectivity_lexicon.tff"))
 
 (defn create-hashmap [l]
 	(let [a (map #(string/split % #"=") l)
@@ -60,14 +60,14 @@
 
 (defn append-stemmed-to-file [subj type]
   (map  (fn [h] (append-to-file (create-train-str h)
-                                "src/net/solobit/ai/models/sentiment.train"))
+                                "src/net/solobit/ai/sentiment/models/sentiment.train"))
         (by-type (by-subj (stemmed-only (corpus))
                           subj)
                   type)))
 
 (defn append-all-to-file [subj type]
   (map  (fn [h] (append-to-file (create-train-str h)
-                                "src/net/solobit/ai/models/sentiment.train"))
+                                "src/net/solobit/ai/sentiment/models/sentiment.train"))
         (by-type (by-subj (corpus)
                           subj)
                   type)))

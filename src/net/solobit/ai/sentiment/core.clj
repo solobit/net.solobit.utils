@@ -1,20 +1,20 @@
-(ns net.solobit.ai.sentimental.core
+(ns net.solobit.ai.sentiment.core
 	(:import [snowball-stemmer])
-	(:require [net.solobit.ai.sentimental.train :as tr])
+	(:require [net.solobit.ai.sentiment.train :as tr])
 	(:use [stemmer.snowball]
 		  	[opennlp.nlp]
 		  	[clojure.java.io]))
 
 
 (def eng-stemmer (stemmer "english"))
-(def tokenizer (make-tokenizer "src/net/solobit/ai/models/en-token.bin"))
-(def detokenizer (make-detokenizer "src/net/solobit/ai/models/english-detokenizer.xml"))
+(def tokenizer (make-tokenizer "src/net/solobit/ai/sentiment/models/en-token.bin"))
+(def detokenizer (make-detokenizer "src/net/solobit/ai/sentiment/models/english-detokenizer.xml"))
 
 ; the actual categorizer
 (def categorize (make-document-categorizer tr/senti-model))
 
 (defn stop-words []
-	(set (tr/get-lines "resources/ai/stop_words.txt")))
+	(set (tr/get-lines "resources/ai/sentiment/stop_words.txt")))
 
 (defn strip-stop-words [l]
 	(filter (fn [x] (not (contains? (stop-words) x)))
