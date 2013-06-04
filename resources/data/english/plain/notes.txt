@@ -1,0 +1,4 @@
+The file plain-en.txt is found at http://www.quickiwiki.com/en/List_of_plain_English_words_and_phrases
+
+This is unlikely to change often, if found so one might wish to hook it up with enlive and get a fresh scrape every now and then.
+

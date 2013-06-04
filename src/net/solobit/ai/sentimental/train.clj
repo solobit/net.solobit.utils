@@ -60,14 +60,14 @@
 
 (defn append-stemmed-to-file [subj type]
   (map  (fn [h] (append-to-file (create-train-str h)
-                                "src/models/sentiment.train"))
+                                "src/net/solobit/ai/models/sentiment.train"))
         (by-type (by-subj (stemmed-only (corpus))
                           subj)
                   type)))
 
 (defn append-all-to-file [subj type]
   (map  (fn [h] (append-to-file (create-train-str h)
-                                "src/models/sentiment.train"))
+                                "src/net/solobit/ai/models/sentiment.train"))
         (by-type (by-subj (corpus)
                           subj)
                   type)))

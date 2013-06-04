@@ -9,11 +9,12 @@
 (def eng-stemmer (stemmer "english"))
 (def tokenizer (make-tokenizer "src/net/solobit/ai/models/en-token.bin"))
 (def detokenizer (make-detokenizer "src/net/solobit/ai/models/english-detokenizer.xml"))
+
 ; the actual categorizer
 (def categorize (make-document-categorizer tr/senti-model))
 
 (defn stop-words []
-	(set (sentimental.train/get-lines "resources/ai/stop_words.txt")))
+	(set (tr/get-lines "resources/ai/stop_words.txt")))
 
 (defn strip-stop-words [l]
 	(filter (fn [x] (not (contains? (stop-words) x)))
@@ -31,3 +32,5 @@
 	Returns a string"
 	[s]
 	(detokenizer (bag-of-words s)))
+
+(categorize "Hey I want to die myself|!@")
