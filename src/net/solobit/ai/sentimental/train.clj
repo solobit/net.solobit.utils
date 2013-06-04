@@ -1,4 +1,4 @@
-(ns sentimental.train
+(ns net.solobit.ai.sentimental.train
 	(:require [clojure.string :as string])
 	(:use [opennlp.nlp]
         [opennlp.tools.train]
@@ -6,27 +6,27 @@
         [clojure.pprint]
         [clojure.java.io]))
 
-(def tokenizer (make-tokenizer "src/models/en-token.bin"))
-(def senti-model (train-document-categorization "src/models/sentiment.train"))
+(def tokenizer (make-tokenizer "src/net/solobit/ai/models/en-token.bin"))
+(def senti-model (train-document-categorization "src/net/solobit/ai/models/sentiment.train"))
 
 (defn get-lines [fname]
   (with-open [r (reader fname)]
     (doall (line-seq r))))
 
 (defn temp-corpus []
-	(get-lines "resources/subjectivity_lexicon.tff"))
+	(get-lines "resources/ai/subjectivity_lexicon.tff"))
 
 (defn create-hashmap [l]
 	(let [a (map #(string/split % #"=") l)
-        b (into {} 
-          (for [[k v] a] 
+        b (into {}
+          (for [[k v] a]
             [(keyword k) v]))]
         b))
 
 (defn process [s]
 	(create-hashmap (tokenizer s)))
 
-(defn corpus [] 
+(defn corpus []
   (vec (map process (temp-corpus))))
 
 
@@ -34,14 +34,14 @@
 	(filter (fn [h] (= (:stemmed1 h) "y"))
 			    col))
 
-(defn by-subj 
+(defn by-subj
   "filter by subject, such as strongsubj, weaksubj"
   [col subj]
   (filter (fn [h] (= (:type h)
                      subj))
           col))
 
-(defn by-type 
+(defn by-type
   "filter by type, such as positive, negative, or neutral"
   [col type]
   (filter (fn [h] (= (:priorpolarity h)
@@ -61,14 +61,14 @@
 (defn append-stemmed-to-file [subj type]
   (map  (fn [h] (append-to-file (create-train-str h)
                                 "src/models/sentiment.train"))
-        (by-type (by-subj (stemmed-only (corpus)) 
+        (by-type (by-subj (stemmed-only (corpus))
                           subj)
                   type)))
 
 (defn append-all-to-file [subj type]
   (map  (fn [h] (append-to-file (create-train-str h)
                                 "src/models/sentiment.train"))
-        (by-type (by-subj (corpus) 
+        (by-type (by-subj (corpus)
                           subj)
                   type)))
 

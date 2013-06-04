@@ -1,5 +1,5 @@
 (defproject
-  net.solobit.utils
+  net.solobit
   "0.1.0-SNAPSHOT"
 
   :url "http://solobit.net"
