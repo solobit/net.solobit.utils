@@ -26,6 +26,7 @@
                  [slingshot "0.10.3"]
                  [cheshire "5.2.0"]
                  [clj-time "0.5.1"]
+                 [clj-pdf "1.10.0"]
                  [enlive "1.1.1"]
                  [fipp "0.3.0"]
                  [matchure "0.10.1"]
