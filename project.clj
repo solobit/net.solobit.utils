@@ -19,6 +19,8 @@
                  [org.clojure/tools.namespace "0.2.3"]
                  [org.clojure/data.generators "0.1.0"]
                  [org.clojars.nakkaya/vision "1.0.0"]
+                 [org.clojure/core.incubator "0.1.2"] ; vision
+                 [org.clojars.nakkaya/jna "3.2.7"] ; vision
                  [org.clojure/core.logic "0.8.3"]
                  [net.mikera/core.matrix "0.7.2"]
                  [swiss-arrows "0.6.0"] ; monads -<>
