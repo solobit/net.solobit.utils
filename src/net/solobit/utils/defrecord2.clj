@@ -3,7 +3,6 @@
 ;; http://opensource.org/licenses/eclipse-1.0.php
 ;; Original work: https://github.com/david-mcneil/defrecord2
 
-
 (ns net.solobit.utils.defrecord2
   "Enhanced defrecord support"
   (:require [clojure.contrib.str-utils2 :as str2]
@@ -16,10 +15,12 @@
         [matchure :only (if-match)])
   (:import [clojure.lang IPersistentList IPersistentVector IPersistentMap IPersistentSet ISeq]))
 
+
 ;; internal helpers for name conversion
 
 (defn is-upper? [s]
   (= (.toUpperCase s) s))
+
 
 (defn assemble-words [parts]
   (loop [remaining-parts parts result []]
@@ -32,6 +33,8 @@
                          (pop result)
                          []) (str (last result) part)))))
       result)))
+
+
 
 (defn camel-to-dashed
   "Convert a name like 'BigBlueCar' to 'big-blue-car'."
@@ -47,16 +50,19 @@
   [source [key value]]
   (assoc source key value))
 
+
 (defn set-record-fields
   "Set many fields on a record, from a map."
   [initial value-map]
   (reduce set-record-field initial value-map))
+
 
 ;; universal constructor function
 
 (defmulti new-record
   "A universal constructor function that can create a new instance of any type of record from a current record and a new value map."
   (fn [initial value-map] (class initial)))
+
 
 (defmacro make-universal-constructor
   "Define the implementation of new-record for this type."
@@ -65,10 +71,12 @@
      [initial# value-map#]
      (~ctor-name initial# value-map#)))
 
+
 ;; internal helper for generating constructor function
 
 (defn expected-keys? [map expected-key-set]
   (not (seq (difference (set (keys map)) expected-key-set))))
+
 
 (defmacro make-record-constructor
   "Define the constructor functions used to instantiate a record."
@@ -94,6 +102,7 @@
                                        [k v])))]
       (apply array-map contents))))
 
+
 (defmacro print-record
   "Low-level function to print a record to a stream using the specified constructor name in the print output and using the provided write-contents function to write out the contents of the record (represented as a map)."
   [ctor ctor-name native-keys record stream write-contents]
@@ -102,14 +111,17 @@
      (~write-contents (remove-nil-native-fields ~native-keys ~record))
      (.write ~stream  ")")))
 
+
 (defn print-record-contents
   "Simply write the contents of a record to a stream as a string. Used for basic printing."
   [stream contents]
   (.write stream (str contents)))
 
+
 (defmacro setup-print-record-method [ctor ctor-name native-keys type-name method-name]
   `(defmethod ~method-name ~type-name [record# writer#]
               (print-record ~ctor ~ctor-name ~native-keys record# writer# (partial print-record-contents writer#))))
+
 
 (defmacro setup-print-record
   "Define the print methods to print a record nicely (so that records will print in a form that can be evaluated as itself)."
@@ -117,6 +129,7 @@
 
   `(do (setup-print-record-method ~ctor ~ctor-name ~native-keys ~type-name print-method)
        (setup-print-record-method ~ctor ~ctor-name ~native-keys ~type-name print-dup)))
+
 
 (defn generate-record-pprint
   "Return a function that can be used in the pprint dispatch mechanism to handle a specific constructor name."
@@ -141,28 +154,37 @@
                     (f (new-foo foo {:a (postwalk2 f (:a foo))
                                      :b (postwalk2 f (:b foo))}))))
 
+
 (defmulti walk2 (fn [w f n] (class n)))
+
 
 (defmethod walk2 :default [w f n]
            n)
 
+
 (defmethod walk2 IPersistentVector [w f n]
            (apply vector (map (partial w f) n)))
+
 
 (defmethod walk2 IPersistentMap [w f n]
            ;; TODO: handle sorted maps
            (apply array-map (mapcat (partial walk2 w f) n)))
 
+
 (defmethod walk2 IPersistentSet [w f n]
            (set (map (partial w f) n)))
+
 
 (defmethod walk2 IPersistentList [w f n]
            (apply list (map (partial w f) n)))
 
+
 (prefer-method walk2 IPersistentList ISeq)
+
 
 (defmethod walk2 ISeq [w f n]
            (map (partial w f) n))
+
 
 (defmacro walking-helper-field
   ([w f n field]
@@ -170,11 +192,13 @@
   ([w f n field & more]
      `(concat (walking-helper-field ~w ~f ~n ~field) (walking-helper-field ~w ~f ~n ~@more))))
 
+
 (defmacro walking-helper-fields
   [w f n fields]
   (if (seq fields)
     `(apply array-map (walking-helper-field ~w ~f ~n ~@fields))
     []))
+
 
 (defmacro make-prewalk2-method
   "Define the methods used to walk data structures."
@@ -188,11 +212,13 @@
                     (~ctor-name n2# contents#))
                   n2#))))
 
+
 (defmacro make-postwalk2-method
   "Define the methods used to walk data structures."
   [ctor-name type-name field-list]
   `(defmethod postwalk2 ~type-name [f# n#]
               (f# (~ctor-name n# (walking-helper-fields postwalk2 f# n# ~field-list)))))
+
 
 ;;;; zipper methods
 
@@ -200,22 +226,29 @@
   "The branch? function to use when creating zippers on records."
   class)
 
+
 (defmethod record-branch? :default [_]
            false)
+
 
 (defmethod record-branch? IPersistentVector [n]
            (> (count n) 0))
 
+
 (defmethod record-branch? IPersistentMap [n]
            (> (count n) 0))
+
 
 (defmethod record-branch? IPersistentList [n]
            (> (count n) 0))
 
+
 (defmethod record-branch? ISeq [n]
            (> (count n) 0))
 
+
 (prefer-method record-branch? IPersistentList ISeq)
+
 
 (defmacro make-record-branch?-method
   "Generate the record-branch? method for a type."
@@ -229,19 +262,25 @@
   "The node-children method to use when creating zippers on records."
   class)
 
+
 (defmethod record-node-children IPersistentVector [n]
            n)
+
 
 (defmethod record-node-children IPersistentMap [n]
            (seq n))
 
+
 (defmethod record-node-children IPersistentList [n]
            n)
+
 
 (defmethod record-node-children ISeq [n]
            n)
 
+
 (prefer-method record-node-children IPersistentList ISeq)
+
 
 (defmacro rnc-helper-field
   ([n field]
@@ -249,11 +288,13 @@
   ([n field & more]
      `(concat (rnc-helper-field ~n ~field) (rnc-helper-field ~n ~@more))))
 
+
 (defmacro rnc-helper-fields
   [n fields]
   (if (seq fields)
     `(rnc-helper-field ~n ~@fields)
     []))
+
 
 (defmacro make-record-node-children-method
   "Generate the record-node-children method for a type."
@@ -267,19 +308,25 @@
   "The make-node method to use when creating zippers on records."
   (fn [node children] (class node)))
 
+
 (defmethod record-make-node IPersistentVector [node children]
            (vec children))
+
 
 (defmethod record-make-node IPersistentMap [node children]
            (apply hash-map (apply concat children)))
 
+
 (defmethod record-make-node IPersistentList [node children]
            children)
+
 
 (defmethod record-make-node ISeq [node children]
            (apply list children))
 
+
 (prefer-method record-make-node IPersistentList ISeq)
+
 
 (defmacro apply-to-symbol [f count]
   "Return a function that takes a vector of args and which will do the equivalent of (apply f args). This is suitable for getting 'apply' like functionality from generated record constructors."
@@ -287,12 +334,14 @@
      (let [~'x x#]
        (~f ~@(map (fn [i] (list 'nth 'x i)) (range count)))))  )
 
+
 (defmacro make-record-make-node-method
   "Generate the record-make-node method for a type."
   [type-name field-list]
   `(defmethod record-make-node ~type-name [_# children#]
               ((apply-to-symbol ~(symbol (str (.getName type-name) ".")) ~(count field-list))
                children#)))
+
 
 ;; helpers for custom zippers
 
@@ -309,6 +358,7 @@
           (record-branch? node))))
     record-branch?))
 
+
 (defn record-node-children-or-map
   "Creates a custom function to use as the children fn in the zipper. The field-map contains keys which are classes and values which are sequences of keywords identifying fields in the class. These keywords identify the fields, and their order, which will be visited as children by the zipper."
   [field-map]
@@ -320,6 +370,7 @@
           (alternate-children-f node)
           (record-node-children node))))
     record-node-children))
+
 
 (defn record-make-node-or-map
   "Creates a custom function to use as the make-node fn in the zipper using
@@ -354,12 +405,15 @@
           (record-ctor node children-map))
         (record-make-node node children)))))
 
+
 ;; record?
 
 (defmulti record? (fn [x] (.getName (class x))))
 
+
 (defmethod record? :default [_]
            false)
+
 
 (defmacro make-record?
   "Define the implementation of record? for this type."
@@ -367,6 +421,7 @@
   `(defmethod record? ~(.getName (resolve type-name))
      [_#]
      true))
+
 
 ;; record pattern matching
 
@@ -389,11 +444,13 @@
 (defn seq-to-list [s]
   (reverse (into '() s)))
 
+
 (defmethod record-matcher :default [x]
            (if (list? x)
              (let [converted-x (seq-to-list (map record-matcher x))]
                converted-x)
              x))
+
 
 (defmacro make-record-matcher
   "Generate the record-make-node method for a type."
@@ -402,6 +459,7 @@
      [[_# value-map#]]
      (list '~'and (symbol (.getName (class (~ctor-name {}))))
            (fmap record-matcher value-map#))))
+
 
 (defmacro match-record
   ([matches expr]
@@ -413,13 +471,17 @@
 
 (defmulti prewalk2 (fn [f n] (class n)))
 
+
 (defmethod prewalk2 :default [f n]
            (walk2 prewalk2 f (f n)))
 
+
 (defmulti postwalk2 (fn [f n] (class n)))
+
 
 (defmethod postwalk2 :default [f n]
            (f (walk2 postwalk2 f n)))
+
 
 (defn record-zip
   "Create a zipper on a tree of records."
@@ -433,10 +495,12 @@
              (record-make-node-or-map field-map ctor-map)
              node)))
 
+
 (defmulti dissoc2
   "Enhanced version of dissoc that will return a new record of the same type with the given fields removed.
   (Calling dissoc on a record will yield a map.)"
   (fn [n & ks] (class n)))
+
 
 (defn dissoc2*
   [ctor-f native-keys n & ks]
@@ -447,10 +511,12 @@
       new-record
       (merge new-record (select-keys d extra-keys)))))
 
+
 (defmacro make-dissoc2-method
   [ctor-name type-name native-keys]
   `(defmethod dissoc2 ~type-name [n# & ks#]
               (apply dissoc2* ~ctor-name ~native-keys n# ks#)))
+
 
 (defmacro defrecord2
   "Defines a record and sets up constructor functions, printing, and pprinting for the new record type."
