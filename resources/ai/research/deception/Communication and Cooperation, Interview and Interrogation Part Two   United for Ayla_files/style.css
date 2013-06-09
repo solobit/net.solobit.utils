@@ -1,0 +1,464 @@
+/*
+Theme Name: Blue and Grey
+Author URI: http://elogi.se/
+Theme URI:
+Description: Modern theme with decent design. Main colors used in the theme are blue and grey. Widgetized menu.
+Author: elogi
+Version: 1.2
+Tags: blue, white, light, two-columns, fixed-width, editor-style
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/* Reset
+------------------------------------------- */
+* {margin: 0; padding: 0; color: #666; font-family: Arial,sans-serif; font-size: 100%;}
+body {min-width: 960px; font-size: .80em; line-height: 1.5em;}
+a, span, strong {font-size: 1em;}
+span {color: inherit;}
+a, a:visited {color: #2b8fc3; text-decoration: none;}
+a:hover {color: #555; text-decoration: none;}
+img {border: none;}
+html {height: 100.01%;}
+
+@font-face {font-family: 'PTSans'; src: url('fonts/pts55f-webfont.eot'); src: url('fonts/pts55f-webfont.eot?#iefix') format('eot'), url('fonts/pts55f-webfont.woff') format('woff'), url('fonts/pts55f-webfont.ttf') format('truetype'), url('fonts/pts55f-webfont.svg#webfontkIZ1cq8e') format('svg'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'PTSansBold'; src: url('fonts/pts75f-webfont.eot'); src: url('fonts/pts75f-webfont.eot?#iefix') format('eot'), url('fonts/pts75f-webfont.woff') format('woff'), url('fonts/pts75f-webfont.ttf') format('truetype'), url('fonts/pts75f-webfont.svg#webfontXwmEKppg') format('svg'); font-weight: normal; font-style: normal;}
+
+/* basic text elements */
+h1 {margin-bottom: 0; color: #000; font-weight: normal; font-size: 2em; font-family: PTSansBold,sans-serif; line-height: 1.5em; }
+h2 {margin: 0; color: #666; font-weight: normal; font-size: 1.833em; font-family: PTSansBold,sans-serif; line-height: 1.3em;}
+h3 {margin: 1em 0; font-size: 1.5em; font-weight: normal; font-family: PTSansBold,sans-serif; line-height: 1.3em;}
+h4 {margin: 1em 0; color: #666; font-size: 1.25em; line-height: 1.3em;}
+p {margin: 1.5em 0;}
+p {font-size:14px;}
+ul, ol {margin: 1em 0;}
+ul li {margin: 5px 0;}
+ol li {margin: 5px 0; display: list-item;}
+
+/* basic form elements */
+fieldset {border: none;}
+legend {border: none; font-weight: bold;}
+label {display: block; float: left; clear: left; width: 150px; margin: 5px 0;}
+input, textarea, select {margin: 5px 0; padding: 5px 10px; border: 1px solid #ccc; background: #fff url("images/input.png") top repeat-x; color: #666; vertical-align: middle;}
+	input.chk, input.radio {width: auto; border: none;}
+textarea {width: 550px; height: 150px;}
+button {height: 25px; margin: 0; padding: 0 10px; border: none; background: #b1e54c url("images/button.png") bottom repeat-x; color: #fff; font: bold 1.083em/25px PTSans,Arial,sans-serif; cursor: pointer; vertical-align: middle;}
+legend {display: none;}
+
+
+/* layout
+------------------------------------------- */
+body {padding-bottom: 20px; background: #c1c1c1 url("images/bg.png") top repeat-x;}
+.header {position: relative; z-index: 50; width: 962px; height: 163px; margin: 0 auto 20px; background: url("images/header.png") center top no-repeat;}
+.header p.logo {position: absolute; left: 15px; top: 25px; margin: 0; color: #333; font: normal 1.5em/95px PTSans,sans-serif; letter-spacing: 0em;}
+
+.header p.logo a {float: left; height: 70px; margin: 0 25px 0 0; padding: 0 25px 0 0; border-right: 1px solid #d5d5d5; color: #333; font: normal 1.75em PTSansBold,sans-serif; text-decoration: none; letter-spacing: 0; line-height: 70px; outline: none;}
+
+.header p.logo a img {vertical-align: middle;}
+.header form {position: absolute; left: 728px; top: 39px; width: 220px; padding: 8px;}
+.header form input {width: 105px; margin: 0 4px 0 0;}
+.header form button {margin: 0; }
+
+.header ul.menu {position: absolute; bottom: 0; left: 0; width: 962px; height: 44px; margin: 0; padding: 0; list-style: none; background: url("images/mm.png") center 2px no-repeat;}
+.header ul.menu li {float: left; position: relative; height: 44px; margin: 0; padding: 0 2px 0 0; background: url("images/mm-separator.png") right 4px no-repeat;}
+.header ul.menu>li>a {float: left; position: relative; z-index: 2; height: 40px; padding: 0 3px 4px 0; line-height: 40px; background: url("images/mm-over.png") 0 -90px no-repeat; text-decoration: none;}
+.header ul.menu>li>span a {float: left; height: 40px; padding: 0 0 0 3px;}
+.header ul.menu>li>a span span {float: left; height: 40px; padding: 0 13px; color: #e4f1f8; font: bold 1.167em/40px PTSansBold,sans-serif; text-shadow: #1c6c96 1px 1px 2px; text-transform: uppercase;}
+.header ul.menu>li>a:hover, .header ul.menu>li:hover>a, .header ul.menu>li.current_page_item>a, .header ul.menu>li.current-menu-item>a {height: 44px; background-position: right -44px;}
+.header ul.menu>li>span a:hover, .header ul.menu>li:hover>span a, .header ul.menu>li.current_page_item>span a, .header ul.menu>li.current-menu-item>span a {height: 44px; background: url("images/mm-over.png") 0 -44px no-repeat;}
+.header ul.menu>li>a:hover span span, .header ul.menu>li:hover>a span span, .header ul.menu>li.current_page_item>a span span, .header ul.menu>li.current-menu-item>a span span {height: 44px; background: url("images/mm-over.png") center 0 no-repeat; color: #fff; text-shadow: #729d1e 1px 1px 2px;}
+
+.header ul.menu li ul {display: none; position: absolute; left:0; top: 37px; z-index: 1; list-style: none; width: 180px; margin: 0; padding: 0; border: 1px solid #d8d8d8; border-top:none; background: #ccc; -webkit-box-shadow: 0 0 5px rgba(50, 50, 50, 0.55); moz-box-shadow: 0 0 5px rgba(50, 50, 50, 0.55); box-shadow: 0 0 5px rgba(50, 50, 50, 0.55); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;}
+.header ul.menu>li:hover>ul {display: block;}
+.header ul.menu li ul li {float: none; height: auto; padding: 0; margin: 0; background: none; }
+.header ul.menu li ul li a {display: block; float: none; height: auto; padding: 5px 15px; border-top: 1px solid #d8d8d8; color: #888; font: normal 1.083em PTSans,sans-serif; text-decoration: none;}
+.header ul.menu li ul li a:hover, .header ul.menu li ul li:hover>a {background: #eee; color: #555; padding: 5px 15px; height: auto;}
+.header ul.menu>li>ul>li>ul {display: none; left: 180px; top: 0;}
+.header ul.menu>li>ul>li:hover>ul {display: block;}
+
+.content {overflow: hidden; width: 958px; margin: 0 auto; padding: 20px 0; background: #fff url("images/content.png") center 1px no-repeat;}
+.sidebar {float: right; width: 273px; padding: 0 20px 0 0;}
+.sidebar ul {margin: 0; padding: 0; list-style: none;}
+.sidebar ul li {margin: 0 0 20px 0; padding: 0;}
+.sidebar ul li h2 {margin: 0; padding: 2px 0 7px 15px; background: url("images/side-heading.png") left bottom no-repeat; color: #999; font: normal 1.5em/24px PTSansBold,sans-serif;}
+.sidebar ul li ul {margin: 1em 0;}
+.sidebar ul li ul li {margin: 0; padding: 0;}
+.sidebar ul li ul li a {display: block; padding: 5px 0 5px 20px; border-bottom: 1px solid #ddd; background: url("images/sm-arrow.gif") 4px 10px no-repeat;}
+.sidebar ul li ul li a:hover {background-color: #eee; color: #666;}
+.sidebar ul li ul li ul {margin: 0;}
+.sidebar ul li ul li ul a {padding-left: 30px; background-image: url("images/sm-arrow2.gif"); background-position: 15px 10px;}
+.sidebar ul li ul li ul ul a {padding-left: 40px; background-image: url("images/sm-arrow3.gif"); background-position: 25px 10px;}
+.main {float: left; width: 603px; padding: 0 40px 0 20px; background: url("images/column-separator.png") right top no-repeat;}
+.main h2 a {color: #666; font-weight: normal; font-family: PTSansBold,sans-serif;}
+.main h2 a:hover {color: #2b8fc3;}
+
+.footer {overflow: hidden; width: 958px; height: 38px; margin: 0 auto; background: url("images/footer.png") top center no-repeat;}
+.footer ul.social {float: right; overflow: hidden; list-style: none; margin: 0 15px 0 0; padding-top: 2px;}
+.footer ul.social li {float: left; margin: 0 2px; padding: 0;}
+.footer ul.social li a {display: block; overflow: hidden; width: 36px; height: 35px; background: url("images/social.png") no-repeat; text-indent: -5000px;}
+.footer ul.social li a.facebook {background-position: 0 bottom;}
+.footer ul.social li a.twitter {background-position: -36px bottom;}
+.footer p {margin: 2px 0 0 10px; color: #9f9f9f; line-height: 35px; }
+.footer p span {padding: 0 5px; color: #646464;}
+.footer p a {padding: 0 5px; color: #3191c3; text-decoration: none;}
+.footer p a:hover {color: #333; text-decoration: underline;}
+
+/* reusable classes
+------------------------------------------- */
+.secret {display: none;}
+
+.post {overflow: hidden; margin: 0 0 30px 0;}
+.post h2 {margin: 0;}
+p.meta {overflow: hidden; margin: 0.5em 0 1em; border: 1px solid #e6e6e6; background: #f7f7f7 url("images/meta-bg.png") top repeat-x; font-size: 0.917em; line-height: 18px;}
+p.tags {overflow: hidden; float: left; width: 480px; overflow: hidden; margin: 0 0 1em 0; border: 1px solid #efefef; background: #fafafa; font-size: 0.917em; line-height: 18px;}
+p.tags.full {float: none; width: auto;}
+p.more {float: right; margin: 0 0 1em 0; }
+p.more a {float: right; padding-left: 20px; background: url("images/icons/more.png") 0 center no-repeat; font-weight: bold; line-height: 18px;}
+p.meta span, p.tags span {float: left; padding: 0 15px 0 35px; background: url("images/post-meta.png") no-repeat; line-height: 18px; }
+p.meta span.date {background-position: 0 0; color: #333;}
+p.meta span.author {background-position: 0 -18px;}
+p.meta span.cats {background-position: 0 -36px;}
+p.tags span {background-position: 0 -54px;}
+p.tags span.comments {background-position: 0 -72px;}
+
+.main ol, .main ul {margin: 1.5em 3em;}
+.main ul {margin: 1.5em 2.5em; list-style: none;}
+.main ul li {padding-left: 20px; background: url("images/sm-arrow.gif") 0 5px no-repeat;}
+
+.main form {padding: 15px; border: 1px solid #ddd; background: #f0f0f0 url("images/form-shadow.png") 0 0 no-repeat;}
+p.submit {margin-bottom: 0; text-align: center;}
+
+ul.commentlist {list-style: none; margin: 1.5em 0; padding: 0; border-bottom: 1px solid #ddd;}
+ul.commentlist li {margin: 0; padding: 10px 15px; border-top: 1px solid #ddd; background: #fafafa;}
+ul.commentlist li.odd {background: #f0f0f0;}
+ul.commentlist li a {color: #83AD30;}
+ul.commentlist li { font-size: 14px; }
+ul.commentlist li a:hover {color: #333;}
+ul.commentlist li img.avatar {float: left; margin: 0 10px 0 0; padding: 2px; border: 1px solid #ddd; background:#fff;}
+
+.wp-caption {width: 280px; margin: 0; padding: 5px; border: 1px solid #ddd; background: #fafafa;}
+.wp-caption.alignleft {float: left; margin-right: 15px;}
+.wp-caption.alignright {float: right; margin-left: 15px;}
+.wp-caption a {text-decoration: none;}
+.wp-caption p.wp-caption-text {margin: 0.5em 0; font-size: 0.917em;}
+
+p.pagination {padding: 10px 0; background: url("images/horizontal-separator.png") center top no-repeat; color: #aaa; text-align: center;}
+p.pagination a {padding: 2px 5px; font-weight: bold;}
+p.pagination a:hover {background: #83AD30; color: #fff;}
+p.pagination a.current {background: #777; color: #fff;}
+
+#recentcomments ul {list-style: none;}
+#recentcomments li a {display: inline; margin: 0; padding: 0; border: none; background: none;}
+#recentcomments li a:hover {text-decoration: underline; background: none;}
+#recentcomments li {padding: 5px 0; border-bottom: 1px solid #ddd;}
+
+#design {width: 958px; margin: 0 auto; padding: 10px 0 5px 0; text-align: right; font-size: 10px;}
+
+/*----------Wordpress styles--------------*/
+.comment {
+	padding-bottom:10px;
+}
+#comments h2 {
+	font:bold 15px/20px Arial, Helvetica, sans-serif;
+}
+.comment .author {
+	padding-bottom:5px;
+}
+#respond label {
+	display:block;
+	clear:both;
+}
+#respond input,
+#respond textarea {
+	width:320px;
+	background:#f6f6f6;
+	border:1px solid #d0d0d0;
+	font:13px/16px Arial,Helvetica, sans-serif;
+	color:#333;
+}
+#respond input {
+	margin-bottom:5px;
+}
+#respond textarea {
+	height:85px;
+}
+#respond #submit {
+	width:auto;
+	border:none;
+	clear:both;
+	float:none;
+	display:block;
+	padding:5px;
+	font:bold 14px/18px Arial, Helvetica, sans-serif;
+	margin:5px 0 0 -5px;
+	color: #fff;
+	background: #90b900;
+}
+#respond {
+	padding-bottom:30px;
+}
+
+/* Comment Form */
+#respond p {
+	padding-bottom:12px;
+}
+#respond input.field {
+	float:left;
+	margin-right:10px;
+	height:14px;
+	padding:2px 3px;
+}
+#respond label {
+	display:block;
+	font-size:11px;
+	line-height:20px;
+} 
+#respond textarea {
+	width:500px;
+	height:120px;
+	margin-bottom:10px;
+	padding:3px 5px;
+}
+#respond input.btn {
+	width:120px;
+	height:25px;
+	cursor:pointer;
+	font-size:12px;
+}
+h3#respond,
+h3#comments {
+	font-size:14px;
+	padding-bottom:10px;
+}
+
+
+/* Comment Closed */
+p.nocomments {	
+	font-weight:bold;
+	font-style:italic;
+}
+
+/* Comment List */
+.commentlist ul {list-style-type: none;}
+.commentlist li {
+	margin-bottom:10px;
+	padding:10px;
+	background-color:#efefef;
+	overflow:hidden;
+}
+.commentlist li.alt {
+	background-color:#f9f9f9;
+}
+	.commentlist li img.photo {
+		float:left;
+		margin:0 10px 5px 0;
+		border:#ccc 1px solid;
+		padding:2px;
+	}
+	.commentlist li p img {
+		display:inline;
+	}
+	.commentlist li p {
+		padding-bottom:8px;
+	}
+	.commentlist li p.commentmetadata {	
+		font-size:11px;
+		padding-bottom:5px;
+	}
+
+/*additional style*/
+s {color: #000;}
+.sticky {border-left: 3px solid #bababa; padding-left: 13px;}
+.wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 4px;
+}
+.wp-caption img {
+	margin: 5px 5px 0;
+	max-width: 603px;
+	height:auto;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	margin: 5px;
+	color: #888;
+	font-size: 12px;
+	padding: 0;
+}
+.bypostauthor {}
+.clear {clear: both;}
+img {margin: 0; max-width: 603px; height: auto;}
+.gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+
+#gallery-1 dl {
+   padding:0;
+}
+
+#gallery-1 dl dt {
+   padding: 0;
+}
+		
+#gallery-1 dl dd {
+   padding:0 0 5px 10px;
+}
+
+/*thumbnail*/
+.wp-post-image {float: left; margin: 0 9px 7px 0; max-width: 603px; height: auto;}
+
+/* Image testing */
+.alignright {
+float:right;
+margin:0 0 10px 10px;
+}
+.alignleft {
+float:left;
+margin:0 10px 10px 0;
+}
+.aligncenter {
+clear: both;
+display: block;
+margin:0 auto 10px;
+}
+.alignnone {
+margin-bottom:10px;
+margin-right: 5px;
+}
+.size-thumbnail {
+margin-right:8px;
+display:inline;
+}
+
+.sidebar ul ul {
+margin:0 0 0 0.35em;
+}
+
+.sidebar ul ul ul {
+margin:0 0 0 0.7em;
+}
+
+
+
+/* calender */
+table#wp-calendar {
+width:100%;
+}
+
+table#wp-calendar td,
+table#wp-calendar th {
+padding:1px;
+text-align:center;
+}
+
+.content .commentlist {margin: 5px 0 5px 0px;}
+
+.comment-body ul li {
+	padding: 0 0 0 5px;
+	margin:0px;
+	overflow:visible;
+}
+.comment-body ol li {
+	padding: 0 0 0 5px;
+	margin:0px;
+	overflow:visible;
+}
+.comment-body ul {margin: 5px 0 7px 25px; list-style-type:disc; clear: both;}
+.comment-body ol {margin: 5px 0 7px 25px; list-style-type:decimal; clear: both;}
+
+
+/*tags*/
+q, blockquote {
+	font-style:italic;
+}
+dt {
+	font-weight:bold;
+}
+
+dt, dd {
+	margin:0;
+	padding:0;
+}
+dd {
+	margin-bottom:1.5em;
+}
+
+dl, pre {
+	font-size:1em;
+	margin:1.5em 0;
+	padding:0;
+	line-height:1.5em;
+}
+
+
+big {
+	position:relative;
+	top:.1em;
+	font-size:2em;
+}
+
+ins {
+	text-decoration:none;
+	background-color:#fffabf;
+	background-color:#bfffc5;
+}
+
+sub, sup {line-height:1.2em;}
+
+/*table*/
+.content table {
+	border: 1px solid #e7e7e7;
+	text-align: left;
+	margin: 0 -1px 24px 0;
+	width: 100%;
+}
+.content tr th,
+.content thead th {
+	color: #888;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	padding: 9px 24px;
+}
+.content tr td {
+	border-top: 1px solid #e7e7e7;
+	padding: 6px 24px;
+}
+.content tr.odd td {
+	background: #F2F7FC;
+}
+
+h1, h2, h3, h4, h5, h6 {clear: both;}
+
+.gallery-item img {margin: 0 auto;}
+
+
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+.content pre,
+.content kbd,
+.content tt,
+.content var {
+	font-size: 15px;
+	line-height: 21px;
+}
+.content code {
+	font-size: 13px;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}

@@ -1,0 +1,107 @@
+.cruxpad_feedback_div {
+	position: fixed;
+	bottom: 40px;
+	right: -600px;
+	font-family: 'Open Sans', Tahoma, Arial, "Times New Roman", Times, serif;
+}
+
+.cruxpad_feedback_form {
+	float: left;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 5px;
+	background: rgba(0,0,0,0.8);
+}
+.cruxpad_feedback_label {
+	display: block;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	width: 90px;
+	/*font-weight: bold;*/
+	color: white;
+	font-size: 17px;
+}
+.cruxpad_feedback_notify_msg {
+	display: block;
+	float: right;
+	text-align: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 200px;
+	font-family: Helvetica, Arial, "Times New Roman", Times, serif;
+	/*font-weight: bold;*/
+	color: white;
+	font-size: 13px;
+}
+.cruxpad_feedback_a {
+	background: url("../images/feedback-buttons.png") no-repeat center left transparent;
+	display: block;
+	width: 40px;
+	height: 175px;
+	float: right;
+	text-indent: -9999em;
+	position: absolute;
+	bottom: 0px;
+	right: 600px;
+}
+#cruxpad_feedback_div a:hover {
+	background-position: center right;
+}
+.cruxpad_feedback_send_btn {
+	float: right;
+	background: url("../images/send.png") no-repeat 0px 0px transparent;
+	text-indent: -9999em;
+	width: 80px;
+	height: 28px;
+	border: none;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-right: 260px;
+	cursor: pointer;
+}
+.cruxpad_feedback_textarea {
+	width: 250px;
+	height: 120px;
+	border: 1px solid white;
+}
+.cruxpad_feedback_input {
+	width: 253px;
+	height: 25px;
+	border: 1px solid white;
+}
+.cruxpad_feedback_header {
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans', Tahoma, Arial, "Times New Roman", Times, serif;
+	/*text-shadow:0.2px 0.3px 0.3px #000;*/
+	font-size: 22px;
+	margin-top: 0px;
+}
+
+/*
+ .cruxpad_feedback_div {
+ position: fixed;
+ bottom: 40px;
+ right: -368px;
+ font-family: 'Open Sans', Tahoma, Arial, "Times New Roman", Times, serif;
+ }
+
+ .cruxpad_feedback_table {
+ float: left;
+ border: 1px solid white;
+ padding: 10px;
+ border-radius: 5px;
+ background: rgba(0,0,0,0.8);
+ }
+
+ .cruxpad_feedback_label {
+ display: block;
+ float: right;
+ text-align: right;
+ margin-right: 20px;
+ width: 70px;
+ font-weight: bold;
+ color: white;
+ font-size: 14px;
+ }*/

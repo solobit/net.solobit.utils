@@ -1,0 +1,1597 @@
+/*
+ Document   : summary
+ Created on : 29 Sep, 2012, 10:20:00 AM
+ Author     : abc
+ Description:
+ Purpose of the stylesheet follows.
+ */
+
+/*
+ TODO customize this sample style
+ Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+ */
+/*This file contains the css for summary.html*/
+
+p {
+	display: block;
+	margin-top: 0.0em;
+	margin-bottom: 1.0em;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cruxpad_dialog_main_header {
+	width: 100%;
+	height: 3%;
+}
+.cruxpad_dialog_header {
+	margin: 6px 5px 5px 20px;
+	width: 80%;
+	height: 20px;
+}
+.cruxpad_dialog_favicon {
+	margin: 6px 2px 2px 2px;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	float: left;
+}
+.cruxpad_dialog_link {
+	margin: 6px 2px 2px 4px;
+	font-family: Tahoma, Georgia, "Times New Roman", Times, serif;
+	position: relative;
+	max-width: 92%;
+	width: auto;
+	height: 16px;
+	font-size: 14px;
+	float: left;
+	color: blue;
+	cursor: pointer;
+	/*
+	 -webkit-animation: open 0.5s ease-in 1.4s backwards;
+	 -moz-animation: open 0.5s ease-in 1.4s backwards;
+	 -ms-animation: open 0.5s ease-in 1.4s backwards;
+	 animation: open 0.5s ease-in 1.4s backwards;
+	 */
+}
+
+.cruxpad_dialog_img {
+	margin-top: 20px;
+	height: 47px;
+	background-color: white;
+	width: auto;
+	top: 0%;
+	right: 4%;
+	position: fixed;
+	cursor: pointer;
+	background-color: white;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.cruxpad_upper_right_corner {
+	width: 32px;
+	height: 32px;
+	float: right;
+	background: #666;
+	border-radius: 0 0 0 90px;
+	-moz-border-radius: 0 0 0 90px;
+	-webkit-border-radius: 0 0 0 90px;
+}
+
+.cruxpad_dialog_close {
+	width: 10%;
+	height: 10%;
+	float: right;
+	cursor: pointer;
+	margin-top: -2%;
+}
+
+#cruxpad_dialog_close:hover {
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-top: -31px;
+	background: gainsboro;
+	border-radius: 0 0 0 90px;
+	-moz-border-radius: 0 0 0 90px;
+	-webkit-border-radius: 0 0 0 90px;
+	cursor: pointer;
+}
+
+.cruxpad_dialog {
+	display: block;
+	position: fixed !important;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 1002;
+	overflow: hidden;
+	zoom: 100%;
+	/*border: 2px solid black;*/
+}
+
+/*
+ ::-webkit-scrollbar {
+ width: 12px;
+ }
+
+ ::-webkit-scrollbar-track {
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+ border-radius: 10px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+ border-radius: 10px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+ background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ */
+@-webkit-keyframes open{
+0%{
+-webkit-transform: scale(1,0);
+}
+100%{
+-webkit-transform: scale(1,1);
+}
+}
+
+/*.cruxpad_dialog_close_mask{
+ width:24px;
+ height:24px;
+ float:right;
+ cursor:pointer;
+ margin-top: -385px;
+ background-color:#F0F;
+ }*/
+
+.cruxpad_dialog_summary {
+	width: 100%;
+	height: auto;
+}
+.l_key {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.l_key .cruxpad_li_keywords {
+	text-align: center;
+	font-family: Tahoma, Georgia, "Times New Roman", Times, serif;
+	cursor: pointer;
+	height: auto;
+	line-height: 270%;
+	width: 100%;
+	position: relative;
+	border-right: #070707;
+	font-size: 16px;
+	border-right-width: 10px;
+	box-shadow: inset 0 1px #E3E3E3;
+	-webkit-box-shadow: inset 1 0px chocolate;
+}
+.highlight {
+	background-color: gainsboro;
+}
+/*.cruxpad_dialog_left{
+ width:540px;
+ float:left;
+ height:auto;
+ padding: 5px;
+ background:red;
+ }*/
+.cruxpad_dialog_title {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 2%;
+	width: 75%;
+	padding-left: 2%;
+	padding-right: 2%;
+	vertical-align: middle;
+	text-align: justify;
+	line-height: 150%;
+	font-family: Tahoma;
+}
+
+.cruxpad_dialog_page {
+	width: 79.7%;
+	height: 475px;
+	overflow: auto;
+	/*overflow-y: scroll;*/
+}
+
+.cruxpad_dialog_content {
+	padding: 0px 3% 2% 2%;
+	margin-top: 0px;
+	padding-top: 10px;
+	height: 92%;
+	font-family: Tahoma, Georgia, "Times New Roman", Times, serif;
+	line-height: 150%;
+	text-align: justify;
+	font-size: 17px;
+	font-weight: normal;
+}
+
+.cruxpad_dialog_right {
+	width: 20%;
+	height: auto;
+	float: right;
+	top: 105px;
+	position: fixed;
+	right: 0px;
+	font-family: Tahoma;
+	text-align: center;
+}
+
+.key_label {
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Tahoma, Georgia, "Times New Roman", Times, serif;
+}
+
+.cruxpad_dialog_footer {
+	width: 100%;
+	height: 40px;
+	z-index: 21746552;
+	background-color: #EDEDED;
+	bottom: 0px;
+	position: fixed;
+	opacity: 1.0;
+	z-index: 2147483645 !important;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 10px;
+	font-color: #5A5A5A;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+	float: left;
+}
+
+.cruxpad_dialog_footer_select {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	vertical-align: middle !important;
+	display: inline;
+	border-right: 1px solid #F7F7F7;
+}
+
+.select_ul {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+.select_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+.cruxpad_dialog_footer_readlater {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	vertical-align: middle !important;
+	display: inline;
+	border-right: 1px solid #F7F7F7;
+	border-left: 1px solid #C9C9C9;
+}
+
+.readlater_ul {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+.readlater_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+.cruxpad_dialog_footer_like {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	vertical-align: middle !important;
+	display: inline;
+	border-right: 1px solid #F7F7F7;
+	border-left: 1px solid #C9C9C9;
+}
+
+.like_ul {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+.like_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+.cruxpad_dialog_footer_share {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	vertical-align: middle !important;
+	display: inline;
+	border-left: 1px solid #C9C9C9;
+}
+
+.share_ul {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+.share_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+.cruxpad_dialog_footer_help {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	border-right: 1px solid #F7F7F7;
+	border-left: 1px solid #C9C9C9;
+}
+
+.help_ul {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+.help_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+.cruxpad_dialog_footer_report {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	border-right: 1px solid #F7F7F7;
+	border-left: 1px solid #C9C9C9;
+}
+
+.report_ul {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+.report_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+.cruxpad_dialog_footer_print {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	border-right: 1px solid #F7F7F7;
+}
+
+.print_ul {
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+
+.print_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+.l_key :hover {
+	background-color: gainsboro;
+	font-size: 16px;
+	border-right: #070707;
+	border-right-width: 10px;
+	border-right-style: solid;
+}
+
+.cruxpad_dialog_view {
+	float: right;
+	position: fixed;
+	bottom: 40px;
+	width: 79%;
+	height: 38px;
+	margin-bottom: -11px;
+	background-color: white;
+	font-family: Tahoma;
+	font-size: 14px;
+	text-align: right;
+	border: none;
+}
+
+.short_view {
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.medium_view {
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.original_view {
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.fb_like_div {
+	position: absolute;
+	bottom: 40px;
+	left: 80px;
+	width: 225px;
+	background-color: rgb(237, 237, 237);
+	height: 56px;
+	z-index: 2147483649;
+	border-style: solid solid none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-color: rgb(220, 220, 220);
+	border-right-color: rgb(220, 220, 220);
+	border-left-color: rgb(220, 220, 220);
+	display: none;
+}
+
+.fb_close_like {
+	position: initial;
+	bottom: 66px;
+	float: right;
+	cursor: pointer;
+}
+
+.fb_msg_div {
+	position: fixed;
+	bottom: 50px;
+	left: 190px;
+}
+
+.fb_msg {
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+.fb_frame {
+	width: 100px;
+	border: none;
+	overflow: hidden;
+	width: 100px;
+	height: 21px;
+	position: fixed;
+	bottom: 47px;
+	left: 90px;
+}
+
+.google_plus_div {
+	position: absolute;
+	display: none;
+	bottom: 40px;
+	left: 105px;
+	width: 225px;
+	background-color: rgb(237, 237, 237);
+	height: 56px;
+	z-index: 2147483649;
+	border-style: solid solid none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-color: rgb(220, 220, 220);
+	border-right-color: rgb(220, 220, 220);
+	border-left-color: rgb(220, 220, 220);
+}
+
+.gp_close_like {
+	position: initial;
+	bottom: 66px;
+	float: right;
+	cursor: pointer;
+}
+
+.gp_msg_div {
+	position: fixed;
+	bottom: 50px;
+	left: 220px;
+}
+
+.gp_msg {
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+.gp_frame {
+	width: 100px;
+	border: none;
+	overflow: hidden;
+	width: 100px;
+	height: 24px;
+	position: fixed;
+	bottom: 47px;
+	left: 125px;
+}
+
+.cruxpad_print_header {
+	margin: 5px 5px 5px 5px;
+	font-family: Arial, serif, Times New Roman, Tahoma, Georgia, Times;
+}
+
+.cruxpad_print_title {
+	margin: 5px 5px 5px 5px;
+	font-family: Arial, serif, Times New Roman, Tahoma, Georgia, Times;
+}
+
+.cruxpad_print_keywords {
+	margin: 5px 5px 5px 5px;
+	font-family: Arial, serif, Times New Roman, Tahoma, Georgia, Times;
+}
+
+.cruxpad_print_content {
+	margin: 5px 5px 5px 5px;
+	font-family: Arial, serif, Times New Roman, Tahoma, Georgia, Times;
+	line-height: 20px;
+	text-align: justify;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal
+}
+
+.cruxpad_body_css {
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	background: none;
+	text-decoration: none;
+	overflow: hidden;
+	vertical-align: top;
+	display: inline;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.cruxpad_footer_summary {
+	background-color: #EDEDED;
+	height: 150px;
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	opacity: 1.0;
+	z-index: 2147483645 !important;
+	cursor: auto;
+	border-top: 2px solid #818181;
+}
+
+.cruxpad_footer_options {
+	width: 51px;
+	background-color: #EDEDED;
+	height: 100%;
+	z-index: 2147483647 !important;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.o_key {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-left: 1px solid #C9C9C9;
+	padding-left: 0px;
+}
+
+.o_key li {
+	float: left;
+	margin-top: 0px;
+	margin-left: 5px;
+	color: #5A5A5A;
+	width: 70%;
+	list-style-type: none;
+	clear: left;
+	display: inline;
+	height: 26px;
+	text-align: center;
+}
+
+.cruxpad_footer_sent {
+	line-height: 23.5px;
+	font-size: 15px;
+	font-style: normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #5A5A5A;
+	font-weight: normal;
+	z-index: 2147483645;
+	text-align: justify;
+	overflow: hidden;
+	height: 100%;
+	width: 614px;
+	float: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.cruxpad_footer_sent p {
+	overflow: hidden;
+	height: 80%;
+	padding-left: 0.95em;
+	padding-right: 0.95em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-right: 1px solid #F7F7F7;
+	border-left: 1px solid #C9C9C9;
+}
+.cruxpad_footer_key {
+	color: white;
+	font-weight: 500;
+	z-index: 2147483647;
+	background-color: #EDEDED;
+	font-size: 15px;
+	font-style: normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	height: 100%;
+	width: 219px;
+	float: left;
+	text-align: left;
+	margin-top: 15px;
+}
+
+.s_key {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	height: 80%;
+	border-left: 1px solid #C9C9C9;
+	border-right: 1px solid #F7F7F7;
+}
+.s_key li {
+	float: left;
+	padding-top: 0px;
+	padding-left: 0.75em;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	background-color: #7E7E7E;
+	color: #EDEDED;
+	margin-left: 1.15em;
+	margin-right: 1.15em;
+	width: 79%;
+	height: 21px;
+	list-style-type: none;
+	clear: left;
+	display: inline;
+}
+
+.cruxpad_footer_widgets {
+	width: 116px;
+	background-color: #EDEDED;
+	height: 100%;
+	/*font-size: 0.7em;*/
+	font-size: 11px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	z-index: 2147483647;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.w_key {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	height: 80%;
+	border-left: 1px solid #C9C9C9;
+}
+
+.w_key li {
+	float: left;
+	margin-top: 0px;
+	margin-left: 1.45em;
+	color: #5A5A5A;
+	width: 100%;
+	list-style-type: none;
+	clear: left;
+	display: inline;
+}
+.cruxpad_footer_close {
+	float: left;
+	z-index: 2147483650 !important;
+	width: 32px;
+	padding-top: 4px;
+	padding-right: 2px;
+	text-align: right;
+}
+c_r_u_x_f_u_l_l {
+	background-color: #B1D60A;
+}
+c_r_u_x_h_a_l_f {
+	background-color: #F0EDA3;
+}
+
+c_r_u_x_f_u_l_l  c_r_u_x_h_a_l_f {
+	background-color: #B1D60A;
+}
+
+.cruxpad_dialog_footer_download {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	border-right: 1px solid #F7F7F7;
+	border-left: 1px solid #C9C9C9;
+}
+
+.download_ul {
+	width: 100%;
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+.download_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 2px;
+}
+
+#cruxpad_view_summary_notify {
+	display: block;
+	text-align: center;
+	z-index: 2147483650;
+	position: fixed;
+	color: #666;
+	font-size: 15px;
+	background-color: gainsboro;
+	font-family: 'Open Sans', sans-serif;
+	height: auto;
+	width: auto;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#view_summary_close_fb {
+	height: 32px;
+	width: 32px;
+	margin-left: 283px;
+	z-index: 10000000;
+	cursor: pointer;
+	-webkit-filter: grayscale(80%)
+}
+
+/* Add this for Maximize Button - Started */
+
+.cruxpad_fullscreen_img {
+	position: fixed;
+	right: 385px;
+	bottom: 20px;
+}
+
+.cruxpad_fullscreen_text {
+	position: fixed;
+	right: 405px;
+	bottom: 20px;
+	font-size: 11px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	z-index: 2147483647;
+	font-weight: bold;
+	float: left;
+	text-align: right;
+	padding-top: 15px;
+	vertical-align: middle;
+}
+
+.cruxpad_notify_msg {
+	text-align: center;
+	z-index: 2147483650;
+	position: fixed;
+	color: #666;
+	font-size: 15px;
+	background-color: gainsboro;
+	font-family: 'Open Sans', sans-serif;
+	height: auto;
+	width: auto;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* Add this for Maximize Button - Ended */
+
+/* css for new minimized footer  */
+
+.cruxpad_mini_footer {
+	background-color: rgba(0,0,0,0.8);
+	height: 45px;
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	z-index: 2147483645 !important;
+	cursor: auto;
+	border-top: 1px solid white;
+}
+
+.cruxpad_mini_footer_msg_palette_div {
+	height: 35px;
+	width: 50%;
+	bottom: 46px;
+	position: fixed;
+	z-index: 2147483645 !important;
+	float: left;
+}
+
+.cruxpad_mini_footer_msg_div {
+	background-color: rgba(0,0,0,0.8);
+	height: auto;
+	width: auto;
+	bottom: 46px;
+	position: fixed;
+	z-index: 2147483645 !important;
+	cursor: auto;
+	border: 1px solid white;
+	border-bottom: none;
+	font-size: 15px;
+	font-style: normal;
+	overflow: hidden;
+	font-family: 'Open Sans', Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.cruxpad_mini_footer {
+	background-color: rgba(0,0,0,0.8);
+	height: 45px;
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	z-index: 2147483645 !important;
+	cursor: auto;
+	border-top: 1px solid white;
+}
+
+.cruxpad_mini_footer_close_div {
+	width: 20px;
+	position: fixed;
+	right: 0px;
+	margin-top: 4px;
+	margin-right: 4px;
+	bottom: 22px;
+}
+
+.cruxpad_mini_footer_close {
+	cursor: pointer;
+}
+
+.cruxpad_mini_footer_logo_div {
+	left: 0px;
+	margin-top: 3px;
+	margin-left: 2px;
+	width: 42px;
+	position: fixed;
+	bottom: 3px;
+}
+
+.cruxpad_mini_footer_logo {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.cruxpad_mini_footer_content {
+	bottom: 10px;
+	height: 25px;
+	width: auto;
+	left: 42px;
+	position: fixed;
+}
+
+.cruxpad_mini_footer_focus_words {
+	width: auto;
+	height: 25px;
+	position: fixed;
+	margin-left: 0px;
+	margin-right: 10px;
+	float: left;
+	left: 42px;
+	vertical-align: middle !important;
+	display: inline;
+	color: white;
+	font-weight: 500;
+	z-index: 2147483647;
+	font-size: 15px;
+	font-style: normal;
+	overflow: hidden;
+	font-family: 'Open Sans', Georgia, "Times New Roman", Times, serif;
+}
+
+.focus_words_ul {
+	width: auto;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+	overflow: hidden;
+}
+
+.focus_words_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	cursor: pointer;
+	color: #FFFFFF;
+	width: auto;
+	padding-top: 3px;
+	margin-right: 15px;
+	margin-left: 0px;
+	padding-bottom: 3px;
+	margin-top: 0px;
+}
+
+.cruxpad_mini_footer_search {
+	width: auto;
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 15px;
+	float: left;
+	vertical-align: middle !important;
+	display: inline;
+	color: white;
+	font-weight: 500;
+	z-index: 2147483647;
+	font-size: 15px;
+	font-style: normal;
+	overflow: hidden;
+	font-family: 'Open Sans', Georgia, "Times New Roman", Times, serif;
+}
+
+.cruxpad_mini_footer_search_input {
+	width: 135px;
+	height: 85%;
+	float: left;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	padding-left: 3px;
+	padding-right: 20px;
+	line-height: 1;
+	color: #2E2F29;
+	vertical-align: middle !important;
+	display: inline;
+	z-index: 2147483647;
+	font-style: normal;
+	overflow: hidden;
+	border: 1px solid #FFFFFF;
+	background: #FFFFFF url(../../images/footer-search.png) no-repeat right;
+}
+
+.cruxpad_mini_footer_color_picker {
+	width: auto;
+	height: 100%;
+	margin-left: 15px;
+	margin-right: 5px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 11px;
+	font-color: #5A5A5A;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+}
+
+.color_picker_ul {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+}
+
+.color_picker_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 4px;
+}
+
+.cruxpad_mini_footer_cruxpad_view {
+	width: auto;
+	height: 100%;
+	margin-left: 15px;
+	margin-right: 15px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+	cursor: pointer;
+}
+
+.cruxpad_view_ul {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+}
+
+.cruxpad_view_ul li {
+	float: left;
+	margin-top: 1px;
+	list-style-type: none;
+	display: inline;
+}
+
+.cruxpad_mini_footer_slider_div {
+	width: 135px;
+	height: 0px;
+	margin-left: 13px;
+	margin-right: 13px;
+	margin-top: 12px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	cursor: pointer;
+}
+
+.cruxpad_mini_footer_slider_scale_mark_div {
+	width: 250px;
+	height: auto;
+	position: fixed;
+	bottom: 14px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-size: 5px;
+	color: #FFFFFF;
+	text-align: left;
+	text-transform: none;
+	font-style: normal;
+}
+
+.cruxpad_mini_footer_slider_scale_figure_div {
+	width: 250px;
+	height: auto;
+	position: fixed;
+	bottom: 0px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	text-align: left;
+	text-transform: none;
+	font-style: normal;
+}
+
+.cruxpad_mini_footer_slider_text {
+	width: auto;
+	height: 100%;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+	margin-top: -3px;
+}
+
+.slider_text_ul {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+}
+
+.slider_text_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 6px;
+}
+
+/* CSS for Theme1 starts */
+.cruxpad_dialog_main_header_theme1 {
+	width: 1000px;
+}
+
+.cruxpad_dialog_header_theme1 {
+	width: 1000px;
+}
+
+.cruxpad_dialog_img_theme1 {
+	position: absolute;
+	right: 65px;
+}
+
+.cruxpad_dialog_close_theme1 {
+	margin-top: -3%;
+}
+
+.cruxpad_dialog_theme1 {
+	left: 0px;
+	width: 1000px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.cruxpad_dialog_summary_theme1 {
+	width: 1000px;
+}
+
+.cruxpad_dialog_title_theme1 {
+	width: 675px;
+}
+
+.cruxpad_dialog_page_theme1 {
+	width: 725px;
+}
+
+.cruxpad_dialog_right_theme1 {
+	width: 275px;
+	position: absolute;
+}
+
+.cruxpad_dialog_footer_theme1 {
+	width: 1000px;
+}
+
+.cruxpad_dialog_view_theme1 {
+	width: 725px;
+}
+
+.cruxpad_body_css_theme1 {
+	background-color: rgba(0,0,0,0.8);
+}
+/* CSS for Theme1 ends */
+
+/* CSS for new features in the footer starts */
+
+/*
+ .cruxpad_mini_footer_share_div {
+ height: 35px;
+ width: auto;
+ bottom: 46px;
+ position: fixed;
+ z-index: 2147483645 !important;
+ float: right;
+ right: 175px;
+ background-color: rgba(0,0,0,0.8);
+ margin-top: 10px;
+ display: none;
+ }
+
+ .cruxpad_mini_footer_share_div_ul {
+ width: auto;
+ height: 100%;
+ margin-top: 10px;
+ margin-left: 5px;
+ margin-right: 5px;
+ padding-left: 0px;
+ overflow: hidden;
+ }
+
+ .cruxpad_mini_footer_share_div_ul li {
+ list-style-type: none;
+ display: inline;
+ margin-left: 5px;
+ margin-right: 5px;
+ }
+
+ .cruxpad_mini_footer_share_div_img {
+ cursor: pointer;
+ }
+
+ .cruxpad_mini_footer_love_div {
+ height: 45px;
+ width: auto;
+ bottom: 46px;
+ position: fixed;
+ z-index: 2147483645 !important;
+ float: right;
+ right: 90px;
+ background-color: rgba(0,0,0,0.8);
+ display: none;
+ }
+
+ .cruxpad_mini_footer_love_div_ul {
+ width: 175px;
+ height: 100%;
+ margin-top: 10px;
+ margin-left: 5px;
+ margin-right: 5px;
+ padding-left: 0px;
+ overflow: hidden;
+ }
+
+ .cruxpad_mini_footer_love_div_ul li {
+ list-style-type: none;
+ display: inline;
+ margin-left: 5px;
+ margin-right: 5px;
+ cursor: pointer;
+ }
+
+ .cruxpad_mini_footer_love_div_fb_like {
+ position: fixed;
+ right: -125px;
+ bottom: -72px;
+ }
+
+ .cruxpad_mini_footer_love_div_gp_like {
+ position: fixed;
+ right: 150px;
+ bottom: 56px;
+ }
+
+ .cruxpad_mini_footer_love {
+ width: auto;
+ height: 100%;
+ margin-left: 15px;
+ margin-right: 0px;
+ float: right;
+ vertical-align: middle !important;
+ display: inline;
+ font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+ font-weight: bold;
+ font-size: 11px;
+ font-color: #5A5A5A;
+ text-align: center;
+ text-transform: none;
+ font-style: normal;
+ }
+
+ .cruxpad_mini_footer_love_ul {
+ width: 100%;
+ height: 100%;
+ margin: 0px 0px 0px 0px;
+ padding-left: 0px;
+ }
+
+ .cruxpad_mini_footer_love li {
+ float: left;
+ list-style-type: none;
+ display: inline;
+ padding-top: 4px;
+ }
+
+ .cruxpad_mini_footer_love_img {
+ cursor: pointer;
+ }
+
+ .cruxpad_mini_footer_share {
+ width: auto;
+ height: 100%;
+ margin-left: 15px;
+ margin-right: 5px;
+ float: right;
+ vertical-align: middle !important;
+ display: inline;
+ font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+ font-weight: bold;
+ font-size: 11px;
+ font-color: #5A5A5A;
+ text-align: center;
+ text-transform: none;
+ font-style: normal;
+ }
+
+ .cruxpad_mini_footer_share_ul {
+ width: 100%;
+ height: 100%;
+ margin: 0px 0px 0px 0px;
+ padding-left: 0px;
+ }
+
+ .cruxpad_mini_footer_share_ul li {
+ float: left;
+ list-style-type: none;
+ display: inline;
+ padding-top: 4px;
+ }
+
+ .cruxpad_mini_footer_share_img {
+ cursor: pointer;
+ }
+
+ .cruxpad_mini_footer_read_later_div {
+ height: 35px;
+ width: auto;
+ bottom: 46px;
+ position: fixed;
+ z-index: 2147483645 !important;
+ float: right;
+ right: 225px;
+ background-color: rgba(0,0,0,0.8);
+ margin-top: 10px;
+ display: none;
+ }
+
+ .cruxpad_mini_footer_read_later_div_ul {
+ width: auto;
+ height: 100%;
+ margin-top: 10px;
+ margin-left: 5px;
+ margin-right: 5px;
+ padding-left: 0px;
+ overflow: hidden;
+ }
+
+ .cruxpad_mini_footer_read_later_div_ul li {
+ list-style-type: none;
+ display: inline;
+ margin-left: 5px;
+ margin-right: 5px;
+ cursor: pointer;
+ }
+
+ .cruxpad_mini_footer_read_later_div_img {
+ cursor: pointer;
+ }
+
+ .cruxpad_mini_footer_read_later {
+ width: auto;
+ height: 100%;
+ margin-left: 15px;
+ margin-right: 5px;
+ float: right;
+ vertical-align: middle !important;
+ display: inline;
+ font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+ font-weight: bold;
+ font-size: 11px;
+ font-color: #5A5A5A;
+ text-align: center;
+ text-transform: none;
+ font-style: normal;
+ }
+
+ .cruxpad_mini_footer_read_later_ul {
+ width: 100%;
+ height: 100%;
+ margin: 0px 0px 0px 0px;
+ padding-left: 0px;
+ }
+
+ .cruxpad_mini_footer_read_later li {
+ float: left;
+ list-style-type: none;
+ display: inline;
+ padding-top: 4px;
+ }
+
+ .cruxpad_mini_footer_read_later_img {
+ cursor: pointer;
+ }
+ */
+
+.cruxpad_mini_footer_facebook_like {
+	width: 47px;
+	height: 100%;
+	margin-left: 15px;
+	margin-right: 0px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 11px;
+	font-color: #5A5A5A;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+	overflow: hidden;
+}
+
+.cruxpad_mini_footer_facebook_like_ul {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+}
+
+.cruxpad_mini_footer_facebook_like_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 3px;
+}
+
+.cruxpad_mini_footer_twitter_share {
+	width: auto;
+	height: 100%;
+	margin-left: 15px;
+	margin-right: 0px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 11px;
+	font-color: #5A5A5A;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+}
+
+.cruxpad_mini_footer_twitter_share_ul {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+}
+
+.cruxpad_mini_footer_twitter_share_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 1px;
+}
+
+.cruxpad_mini_footer_twitter_share_img {
+	cursor: pointer;
+}
+
+.cruxpad_mini_footer_facebook_share {
+	width: auto;
+	height: 100%;
+	margin-left: 15px;
+	margin-right: 0px;
+	float: right;
+	vertical-align: middle !important;
+	display: inline;
+	font-family: 'Open Sans', Arial, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 11px;
+	font-color: #5A5A5A;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+}
+
+.cruxpad_mini_footer_facebook_share_ul {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+}
+
+.cruxpad_mini_footer_facebook_share_ul li {
+	float: left;
+	list-style-type: none;
+	display: inline;
+	padding-top: 1px;
+}
+
+.cruxpad_mini_footer_facebook_share_img {
+	cursor: pointer;
+}
+
+/* CSS for new features in the footer ends */

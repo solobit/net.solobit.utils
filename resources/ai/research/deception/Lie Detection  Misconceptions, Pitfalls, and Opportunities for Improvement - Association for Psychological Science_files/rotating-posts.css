@@ -1,0 +1,275 @@
+/*
+CSS Name: Rotating Posts Default Theme
+Description: For Rotating Posts plugin with WordPress Default Theme
+Author: Mark Inderhees
+Version: 1.1
+
+This can be used as a template for your own personal Rotating Posts Theme
+*/
+
+div#rp_frame
+{
+	margin: 10px 0 0 0;
+	padding: 5px;
+	padding-top: 7px;
+	width: 404px;
+	
+	background: /*url(images/rotating-post-back.jpg) bottom left repeat-x #033665;*/
+}
+
+
+div.rp_post
+{ 
+width: 400px;
+margin-bottom: 0px;
+border: 0px solid black;
+
+}
+
+
+
+div.rp_post h2
+{
+	margin: 0px 0 5px 0;
+	padding: 0px;
+	line-height: 22px;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+div.rp_post_title
+{ margin: 20px 0px 0px 0px;
+padding: 0 5px 0 0px;
+}
+
+div.rp_post_time_author
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	color: #777;
+	margin: 0 0 5px 0;
+	padding: 0 5px 0 0px;
+}
+
+div.rp_post_content
+{
+	
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	padding: 0 5px 0px 0px;
+	
+}
+
+div.rp_post_content p
+{
+
+	padding: 0 5px 0 5px;
+	margin: 0 0 0px 0;
+	line-height: normal;
+
+}
+
+div.rp_post p.rp_post_metadata
+{
+	color: #777;
+	margin: 0;
+	padding: 0;
+}
+
+div#rp_nav
+{
+	margin: 0px 0 0 0;
+	padding: 0 0 3px 0;
+	width: 100%;
+}
+
+div#rp_nav a
+{
+	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
+	padding: 0px 0 0px 0;
+}
+
+div#rp_nav #rp_nav_arrows
+{	
+	padding: 0px 0 3px 0;
+	font-weight: bold;
+}
+
+div#rp_nav #rp_nav_arrows::selection
+{	background-color: transparent;
+}
+
+div#rp_nav #rp_nav_arrows::-moz-selection
+{	background-color: transparent;
+}
+
+
+div#rp_nav #rp_nav_arrows:focus{
+	background-color: none;
+	}
+
+div#rp_nav #rp_nav_arrows a.rp_nav_button:hover
+{
+	/*color: #b85b5a;*/
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_left
+{background-image: url(images/left_button.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_left:hover
+{background-image: url(images/left_button_pressed.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_left:active
+{background-image: url(images/left_button.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_right
+{background-image: url(images/right_button.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_right:hover
+{background-image: url(images/right_button_pressed.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_right:active
+{background-image: url(images/right_button.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_pause:active
+{background-image: url(images/pause_button_pressed.png);
+background-repeat:no-repeat;
+}
+div#rp_nav #rp_nav_arrows a#rp_nav_pause:hover
+{background-image: url(images/pause_button_pressed.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_pause
+{background-image: url(images/pause_button.png);
+background-repeat:no-repeat;
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_pause
+{
+}
+
+div#rp_nav #rp_nav_arrows img
+{
+}
+
+div#rp_nav #rp_nav_arrows span.rp_nav_arrow_text{
+	margin-top: -5px;
+	padding: 3px 3px 3px 3px;
+	/*background-color: #0a4e97;
+	border: 1px outset #000000;*/
+}
+
+div#rp_nav #rp_nav_arrows span.rp_nav_arrow_text::selection
+{	background-color: transparent;
+}
+
+div#rp_nav #rp_nav_arrows span.rp_nav_arrow_text::-moz-selection
+{	background-color: transparent;
+}
+
+div#rp_nav #rp_nav_arrows span.rp_nav_arrow_text:focus{
+	background-color: transparent;
+}
+
+
+div#rp_nav #rp_nav_arrows span.rp_nav_arrow_text:hover
+{
+	/*background-color: #e7a614;
+	border: 1px inset #000000;*/
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_pause img#rp_nav_pause_normal
+{
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_pause img#rp_nav_pause_pressed
+{
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_pause span#rp_nav_pause_normal
+{
+}
+
+div#rp_nav #rp_nav_arrows a#rp_nav_pause span#rp_nav_pause_pressed
+{background-image: url(images/pause_button_pressed.png);
+background-repeat:no-repeat;
+position: relative;
+top: 3px;
+	/*color: #b85b5a;*/
+}
+
+
+div#rp_nav #rp_nav_arrows a#rp_nav_right
+{
+}
+
+div#rp_nav #rp_nav_thumbnails
+{
+}
+
+div#rp_nav #rp_nav_thumbnails a.rp_nav_thumbnail
+{
+}
+
+div#rp_nav #rp_nav_thumbnails img
+{
+	margin: 0px 0px 0 0;
+	border: solid 1px #000;
+}
+
+div#rp_nav #rp_nav_thumbnails img.rp_nav_thumbnail_on
+{
+}
+
+div#rp_nav #rp_nav_thumbnails img.rp_nav_thumbnail_off
+{
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	
+}
+
+div#rp_nav #rp_nav_thumbnails img.rp_nav_thumbnail_off:hover
+{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	
+	
+}
+div#rp_nav #rp_nav_thumbnails span.rp_nav_thumbnail_on
+{
+	padding: 0px 0px 2px 0px;
+	border: solid 1px #000;
+	background-color: #ddd;
+}
+
+div#rp_nav #rp_nav_thumbnails span.rp_nav_thumbnail_on:hover
+{
+	background-color: #b85b5a;
+}
+
+div#rp_nav #rp_nav_thumbnails span.rp_nav_thumbnail_off
+{
+	padding: 2px 0px 2px 0px;
+	border: solid 1px #000;
+}
+
+div#rp_nav #rp_nav_thumbnails span.rp_nav_thumbnail_off:hover
+{
+	background-color: #b85b5a;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0152)http://www.cruxlight.com/html/error-dialog.html?dispMsg=&&url=http://united4ayla.com/communication-and-cooperation-interview-and-interrogation-part-two/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" hc="b3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="CruxLight - Landing Page">
+		<meta name="keywords" content="cruxlight, cruxbot, crux, summary, summarization, information overload">
+		<meta name="author" content="Cruxbot">
+		<title>CruxLight Error Dialog</title>
+		<link rel="favicon" href="http://www.cruxlight.com/images/private-beta-website/favicon.ico">
+		<script src="jquery-latest.js"></script><style type="text/css"></style>
+		<script src="common.js"></script>
+		<link href="css" rel="stylesheet" type="text/css">
+		<style>
+			.cruxpad_body_css {
+				margin-bottom:0px;
+				margin-left:0px;
+				margin-right:0px;
+				margin-top:0px;
+				padding-top:0px;
+				padding-right:0px;
+				padding-left:0px;
+				padding-bottom:0px;
+				background:none;
+				text-decoration:none;
+				overflow:hidden;
+				vertical-align:top;
+				display:inline;
+				left:0px;
+				right:0px;
+			}
+			.cruxpad_dialog_error_dialog {
+				width:100%;
+				padding-top:11px;
+				padding-bottom:3px;
+				height:auto;
+				z-index:21746552;
+				background-color:rgba(0,0,0,0.8);
+				top:0px;
+				position:fixed;
+				opacity:1.0;
+				z-index:2147483645 !important;
+				font-family:'Open Sans',Georgia,"Times New Roman",Times,serif;
+				color:#FFFFFF;
+				font-size:15px;
+				font-style:normal;
+				line-height:150%;
+				text-align:center;
+				align:center;
+				text-transform:none;
+				font-style:normal;
+				float:left;
+				border-bottom:1px solid white;
+			}
+		</style>
+	</head><button id="javascript-popup-blocker-notify" style="display: none;"></button>
+
+	<body class="cruxpad_body_css">
+
+		<div id="cruxpad_dialog_error_dialog" class="cruxpad_dialog_error_dialog">
+			<img src="cruxbot-logo.png" style="vertical-align:top;margin-top:-9px;">&nbsp;&nbsp;&nbsp; <span id="dispMsg"></span>
+		</div>
+
+	
+
+	<script type="application/javascript" language="javascript">
+		window.onload = function() {
+			var disp_msg = decodeURIComponent(get_url_params('?dispMsg=', '&&'));
+			var doc_url = decodeURIComponent(get_url_params('&&url=', ''));
+
+			$("#dispMsg").html(disp_msg);
+
+			function listener(event) {
+				if(event.data!=null && event.data.substring(0,"cruxlight:".length)=="cruxlight:"){
+					$("#dispMsg").html(event.data.substring("cruxlight:".length));
+				}
+			}
+
+			if (window.addEventListener) {
+				window.addEventListener("message", listener, false);
+			} else {
+				window.attachEvent("onmessage", listener);
+			}
+
+		}
+
+	</script>
+
+
+</body></html>

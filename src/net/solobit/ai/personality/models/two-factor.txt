@@ -1,0 +1,69 @@
+Two-factor models of personality
+http://en.wikipedia.org/wiki/Table_of_similar_systems_of_comparison_of_temperaments
+#Table_of_Theories_and_Instruments_using_Extroversion_and_People-Task-orientation
+#Systems_using_other_factors
+#Enneagram
+
+Two of these temperaments, sanguine and choleric, shared a common trait: quickness of response , while the melancholic and phlegmatic shared the opposite, a longer response .
+
+The melancholic and choleric, however, shared a sustained response , and the sanguine and phlegmatic shared a short-lived response . This meant that the choleric and melancholic both would tend to hang on to emotions like anger, and thus appear more serious and critical than the fun-loving sanguine, and the peaceful phlegmatic. However, the choleric would be characterized by quick expressions of anger ; while the melancholic would build up anger slowly, silently, before exploding. Also, the melancholic and sanguine would be sort of "opposites", as the choleric and phlegmatic, since they have opposite traits.
+
+These are the basis of the two factors that would define temperament in the modern theory.
+
+In the last few centuries, various psychologists would begin expressing the four temperaments in terms of pairs of behaviors that were held in common by two temperaments each.
+
+His view of the temperaments in dogs was: The Melancholic type : categorized as "weak" dogs;
+
+Alfred Adler measured "activity" against "social interest", yielding the four "styles of life": Ruling or Dominant type: high activity, low social interest
+
+Getting or Leaning type: low activity, high social interest
+
+These two factors form four types of character, which he calls Receptive, Exploitative, Hoarding and Marketing. Also deserving mention is a single scale invented in the 1940s by Karen Horney . This one dimension measured "movement" towards, against and away from people. This would result in the coping strategies , in which these three "neurotic" patterns would be paired with a fourth, "healthy" one called "movement with people".
+
+These would describe behaviors associated with both extroversion and reacting to people, in which people attempt to avoid getting hurt, by either distancing themselves from others or maintaining self-sufficiency and independence on one hand; or approaching others, attempting to control or exploit them, and otherwise gain power and recognition; or "give in" to them to gain acceptance and approval, on the other.
+
+As the twentieth century progressed, numerous other instruments were devised measuring not only temperament, but also various individual aspects of personality and behavior, and several began using forms of extroversion and the developing category of people versus task focus as the factors.
+
+In 1928, William Moulton Marston identified four primary emotions, each with an initial feeling tone of either pleasantness or unpleasantness. This led to his viewing people's behavior along two axes, with their attention being either "passive" or "active", depending on the individual's perception of his or her environment as either "favorable" or "antagonistic".
+
+By placing the axes at right angles, four quadrants form with each describing a behavioral pattern: Dominance, which produces activity in an antagonistic environment; with a feeling of unpleasantness until stimulus is acted upon
+
+Submission, which produces passivity in a favorable environment; with a feeling of pleasantness increasing as yielding increases This would be further developed in the 1970s by John G. Geier into the DiSC assessment System, which grades individual scales of "Dominance", "Influence", "Steadiness", and "Conscientiousness".
+
+By now, it would be classified in terms of the two factors; consisting of pairs of Extroverted or "Assertive" aspects , Introverted or "Passive" aspects , Task-oriented or "Controlled" aspects and social or "Open" aspects .
+
+Galen also had intermediate scales for " balance " between the hot/cold and wet/dry poles, yielding a total of nine temperaments.
+
+Another addition to the two factor models was the creation of a 10 by 10 square grid developed by Robert R. Blake and Jane Mouton in their Managerial Grid Model introduced in 1964. This matrix graded, from 0-9, the factors of "Concern for Production" and "Concern for People" , allowing a moderate range of scores, which yielded five "leadership styles": Impoverished
+
+In 1977, "locator charts" were produced for each area by Dr. Leo Ryan, providing a map of the various scores, following the Managerial Grid model, with unofficial names assigned to different score ranges.
+
+They were generally grouped into five main types for each area, in the vein of the Managerial Grid and TKI, except that moderate scores in only one dimension were given separate names, creating nine basic groups for each area .
+
+In the control area, there is a tenth group created by a further division of the low e/high w range. This would form the basis of the Five Temperaments theory by Dr. Richard G . and Phyllis Arno, in which the ancient temperaments were mapped to the FIRO-B scales , with Phlegmatic becoming the moderate e/w instead of low e/high w, which was now taken to constitute a fifth temperament called "Supine", which has many of the "introverted and relationship oriented" traits of the other types defined as such, above. .
+
+The moderate scores mixed with high or low are designated "Phlegmatic blends" and divided with 4 being a blend of Phlegmatic with the lower adjacent temperament, and 5 being a blend with the higher adjacent temperament. This results in 13 separate ranges in each area.
+
+Other factors devised along the way measured other aspects of personality, mostly cognitive aspects. This would form a second strain of temperament theory, one which enjoys the most popularity today.
+
+Immanuel Kant defined his typology by a duality of the beautiful and sublime , and concluded it was possible to represent the four temperaments with a square of opposition using the presence or absence of the two attributes.
+
+The melancholic had a feeling for both , and the sanguine had a predominating feeling for the beautiful , while the choleric, he determined after comparing with the melancholic, lacked a sense of beauty and had only a sense of the sublime .
+
+Hans Eysenck was one of the first psychologists to analyze personality differences using a psycho-statistical method , and his research led him to believe that temperament is biologically based.
+
+By pairing the two dimensions, Eysenck noted how the results were similar to the four ancient temperaments.
+
+He later added a third dimension, psychoticism , resulting in his "P-E-N" three factor model of personality. This has been correlated with two separate factors developed by the Big Five personality traits , called " agreeableness " and " conscientiousness "; the former being similar to the people/task orientation scale elaborated above.
+
+Neuroticism in Eysenck's case acted like the people/task-orientation scale , but was later separated as a distinct factor in the Big Five.
+
+Carl Jung , in the early 20th century, introduced the four factors that would become a part of the later MBTI , and these included extroversion/introversion, sensing and intuition, and thinking/feeling, which would be correlated to Agreeableness, with Judging-Perceiving roughly as Conscientiousness.
+
+David W. Keirsey would make the connection of the two groups with Myers' Sensors and iNtuitors, providing the two factors for his four temperaments.
+
+Keirsey also divided his temperaments by "Role-Informative"/"Role Directive" to form eight "intelligence types"; and finally by E/I, to yield the 16 types of the MBTI.
+
+The Enneagram of Personality would map its nine types to a matrix, whose scales are "Surface Direction" and "Deep Direction".
+
+These are similar to Extroversion and people/task-orientation, but instead of the types being plotted on a scale of 0-9, Horney's original three grades of "towards", "away", and "against" were retained, and now used in both dimensions . This changes the criteria, as the "moderate" grade is considered "away", but this does not necessarily correspond to the moderate extroversion or agreeableness scores of the other instruments.

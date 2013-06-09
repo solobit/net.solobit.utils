@@ -1,0 +1,587 @@
+October 1996
+
+
+                  Statement Analysis: 
+         What Do Suspects' Words Really Reveal?
+
+              By Susan H. Adams, M.A.
+
+_____________________
+Special Agent Adams teaches statement analysis as part of
+interviewing and interrogation courses at the FBI Academy.
+____________________
+
+(In statement analysis, investigators examine words, independent
+of case facts, to detect deception.)
+
+
+Susan Smith stood outside her burgundy sedan and released the
+parking brake. The car plunged down the ramp into South
+Carolina's Long Lake, with her sons, Michael, 3, and Alexander,
+14 months, strapped into their car  seats. To cover her actions,
+Susan told police that the boys were abducted at gunpoint,
+launching a nationwide search for the victims and their abductor.
+During the investigation, Susan tearfully told reporters, "My
+children wanted me. They needed me. And now I can't help them."1
+Yet, the boys' father, David, who believed Susan's story, tried
+to reassure her by saying: "They're okay. They're going to be
+home soon."2
+
+Police subsequently arrested Susan for the murder of her
+children. She was tried and convicted and is currently serving a
+life sentence in a South Carolina correctional institution.
+
+Many investigators use a technique called "statement analysis" to
+discern the truth in statements  like the ones given by Susan and
+David Smith. In statement analysis, investigators examine words, 
+independent of case facts, to detect deception. They also remain
+alert for information omitted and question why the suspect may
+have done so. Investigators then analyze the clues
+unintentionally provided by a suspect and use this insight during
+the subsequent interview.
+
+In the case of Susan Smith, by analyzing the statements made by
+the victims' parents, one could conclude that the father believed
+the boys were alive and the mother knew the children were dead.
+The key to this deduction lies in simple English grammar,
+specifically, verb tense. The father referred to the  children in
+the present tense; the mother used the past tense. Of all times,
+when the "abducted" children really would need their mother, she
+speaks of them in the past tense, e.g., "They needed me." The
+children could no longer want or need her because they were no
+longer alive.
+
+This article gives a brief overview of statement analysis. It
+examines four components of statement analysis--parts of speech
+(pronouns, nouns, and verbs), extraneous information, lack of
+conviction, and the balance of the statement. 
+
+A word of caution is warranted here. There is much more to
+statement analysis than what is provided in this article; space
+limitations preclude incorporating other statement analysis
+components, such as the remaining parts of speech and the
+numerous indicators of missing information.
+
+Still, armed with the information presented in this article,
+investigators will be able to use these basic techniques to gain
+insight into a suspect prior to conducting an interview. By
+learning more about a suspect and determining whether that person
+is being deceptive, they have a much better chance of identifying
+the guilty party and gaining a confession.
+
+THE TECHNIQUE
+
+Statement analysis follows a two-step process. First,
+investigators determine what is typical of a truthful statement,
+referred to as the norm. They then look for any deviation from
+this norm. Truthful statements differ from fabricated ones in
+both content and quality.3
+
+Although spoken words can be analyzed, investigators
+inexperienced in statement analysis will find it easier to begin
+by examining written statements. Investigators can make
+transcripts of oral statements. Or, even better, they can have
+suspects write a statement that details what they did from the
+time they woke up until the time they went to bed. This account
+provides a totally untainted version of the day's events and
+increases the validity of the analysis.
+
+Statement analysis is an aid that can be used to obtain a
+confession; it is not an end in itself. Therefore, whenever
+possible, investigators should analyze the statement before
+interviewing the suspect.
+
+IMPORTANT PARTS OF SPEECH
+
+Parts of speech form the foundation of statement analysis. To
+analyze a statement, investigators first need to examine the
+individual parts of speech, particularly pronouns, nouns, and
+verbs, and to establish the norm for each. If a deviation from
+the norm appears, they then should ask, "Why?"
+
+Pronouns 
+
+Pronouns are parts of speech that take the place of nouns. Common
+examples of personal pronouns include I, me, you, he, she, we,
+they, and it. In statement analysis, particular attention should
+be given to the personal pronouns "I" and "we" and all possessive
+pronouns, such as my, our, your, his, her, etc.
+
+The Pronoun "I"
+
+Investigators have noted that truthful people give statements
+using the pronoun "I," which is first person, singular. Any
+deviation from this norm deserves close scrutiny, for it could be
+an indication that the person is not totally committed to the
+facts in the statement and, therefore, is not telling the whole
+truth.
+
+The following written narrative begins with a clear commitment,
+then shows a definite lack of commitment:
+
+   "I got up at 7:00 when my alarm went off. I took a shower and  
+   got dressed. I decided to go out for breakfast. I went to the  
+   McDonald's on the corner. Met a man who lives nearby. Talked   
+   with him for a few minutes. I finished breakfast and drove to  
+   work."
+
+The first four sentences of the statement match the norm of first
+person, singular--the use of the pronoun "I"; the next two
+sentences show deviation, because this pronoun is missing from
+the statement. What caused the writer to stop using the pronoun
+"I"?
+
+Any change in the use of pronouns is significant, and at this
+point, investigators should realize that the statement now
+becomes devoid of personal involvement. Could there be tension
+between the writer and the man mentioned in the statement? During
+the interview, investigators should draw out specifics about this
+relationship to determine if this part of the narrative  is
+really true or if the writer omitted information.
+  
+ I versus We
+ 
+Because using the first person, singular pronoun is the norm for
+truthful statements, investigators need to look for a lack of the
+pronoun "I" and overuse of the pronoun "we," which is first
+person, plural. The following version of a teen-ager's account
+when asked to relate what he did on Saturday evening illustrates
+the norm:
+
+       "I met four friends at the movie theater, watched a movie, 
+        then stopped to get something to eat with them. We had a  
+        few drinks at the bar on the way home. I stayed until     
+        just after midnight. I drove home...."
+
+The following version of the same account, when contrasted with
+the above statement, indicates deviation from the norm:
+
+        "We all met at the movie theater, watched a movie, then   
+         stopped to get something to eat. We had a few drinks at  
+         the bar on the way home. We stayed until just after      
+         midnight. We each drove home...."
+
+
+Because the second statement contains only "we," instead of the
+expected norm, which uses mostly "I," the investigator should
+wonder why there is no individual involvement. Perhaps the
+teenager hopes to conceal something or at least to avoid sole
+responsibility for some act. 
+
+The Pronoun "We"
+
+In speech and the written word, linguists consider the shortest
+way to say something as the easiest and clearest way to
+communicate. The pronoun "we" is a short, clear way to describe
+one's self and others after proper introductions have been made.
+"We" also denotes togetherness; it indicates a relationship
+between persons.
+
+Omission of the pronoun "we" is significant, particularly when
+the individuals are spouses. In the following versions of an
+account of events given by a husband, the first statement
+indicates the norm; the second one denotes deviation:
+
+      "My wife and I were invited to a neighbor's 50th birthday   
+       party. We arrived at the party a little late. The party    
+       was still in full swing when we left for home."
+
+                            * * *
+      "My wife and I were invited to a neighbor's 50th birthday   
+       party. My wife and I arrived at the party a little late.   
+       The party was still in full swing when my wife and I left  
+       for home."
+
+The second statement reveals distance between the husband and his
+wife. Once the husband introduces his wife into the statement,
+using the pronoun "we" is the shortest way to communicate. Yet,
+the husband avoids this word. Why? Perhaps because there is no
+"togetherness" in the relationship.
+
+If later that night the wife is murdered, and the husband, when
+recounting the day's activities, provides a statement devoid of
+the pronoun "we," investigators questioning the husband should
+focus on the couple's relationship. If the husband admits to
+marital problems, but vehemently denies any involvement in the
+death, investigators may clear him as a suspect, barring contrary
+evidence. However, if the husband responds that the couple was
+very close, investigators should be wary, because statement
+analysis reveals otherwise.
+
+A shift from "they" to "we" also is significant, for it reveals
+personal involvement. In white-collar crime cases, the guilty
+person who denies complicity may find it difficult to keep     
+the pronoun "we" out of a statement completely. In such
+instances, investigators need to search the entire written
+statement for "we." Then, during the interview, they should focus
+on the transaction described with "we." This pronoun indicates
+that the writer was involved.
+
+Another example of this shift in the use of pronouns often can be
+found in alleged rape reports. In the following two statements
+taken from rape reports, the focus is on the pronoun "we":
+
+             "He forced me into the woods,"
+                       versus
+               "We went into the woods."
+
+The first statement represents the norm. The second statement,
+which contains the pronoun "we," is a deviation from the norm.
+
+Veteran rape investigators are alert to the sudden appearance of 
+the pronoun "we" in a victim's  statement. From their experience 
+interviewing rape victims, they have normed the rape victim to
+use the pronouns "he" and "I," not the pronoun "we," to describe
+the assailant and herself.
+
+Because the pronoun "we" denotes togetherness, the investigator
+reading "we" in an alleged rape statement should ask if the
+victim knew the assailant and if they were together before the
+rape occurred. If the victim denies this, there is reason to
+believe the statement is a fabrication.
+
+In reports of an abduction, the use of the pronoun "we" also can
+indicate that the victim may not be telling the whole truth. For
+example, a young woman who reported that she had been abducted at
+a shopping center provided the following written statement:
+    
+       "I parked and started getting out of my car when a white   
+        male about 200 pounds, 6 feet tall approached me and told 
+        me to get in the car or he would hurt me. He then got in  
+        the back. I got in the front and began to drive. He told  
+        me to drive west on the highway. He asked me if I had any 
+        money. I told him no. We drove for about an hour. During  
+        that hour, he hit me repeatedly on the right side of my   
+        face. When we got to the exit, I told him I had no gas.   
+        He got mad and told me to get off the exit. We went       
+        straight off the exit for about 4-5 miles. He told me to  
+        turn down the first street on my left. We went down it    
+        about 1/4 of a mile. He told me to stop. He opened the    
+        door, put both feet out, hit me, and took off walking     
+        quickly. He took off to the east of where I was parked.   
+        After that, I took off and lost sight of him."
+
+Investigators experienced in statement analysis would question
+the truthfulness of the above declaration. A true abduction
+statement, when normed, includes phrases like "He forced me to
+drive..." or "He made me get off at the exit...." Traumatized
+victims who are telling the truth do not use the pronoun "we" to
+describe assailants and themselves.
+
+Investigators concluded that the above statement revealed
+deception. When interviewed, the woman subsequently confessed
+that no abduction occurred. She was, in fact, with a man she
+knew.
+
+Possessive Pronouns
+
+Possessive pronouns, e.g., my, our, your, his, her, and their,
+reveal the attachment that the writer or speaker acknowledges
+toward a  person or object. A suspect will change the pronoun, or
+drop the  pronoun completely, when opting not to show possession
+or admit association with a particular object or person. For
+example, "I was cleaning my gun. I was putting my gun away. The
+gun discharged."
+
+This person, wanting to disclaim ownership of the gun that
+discharged (either accidentally or intentionally), stopped using
+the possessive pronoun "my." It no longer was his gun, under his
+control; it became the gun.
+
+Another example can be found in a written statement made by a
+person whose home burned to the ground:
+
+    "I left my house right after breakfast to join my friends at  
+    the track for the day.... I drove back to my house, made a    
+    few phone calls, then went out to dinner with Stan            
+    Thompson.... Stan dropped me off at my house around 10:00.    
+    After I changed my clothes I left the house to spend the      
+    night at my cousin Tom's. Around midnight we heard fire       
+    engines and got up to see what was going on."
+
+In this account, after the writer consistently used the pronoun
+"my" to describe his house, he omitted the pronoun the last time
+it was mentioned. Was it because the  house burned down, and it
+was no longer his house? If so, then this change should have
+occurred much later, after midnight, when the  writer learned
+that the house was burning.
+
+Based on the statements made, investigators should question why
+the switch in references occurred the last time the writer was in
+the house. Was it because the writer had spread accelerant on the
+floor of the house? Was the writer already giving up possession
+because he had set the fire? Just as arson investigators try to
+discover if valuable possessions have been removed from a house
+prior to a fire, those skilled in statement analysis look for the
+exact point at which the owner stops taking possession by failing
+to use the pronoun "my."
+
+Nouns
+
+Nouns denote persons, places, and things. Yet, nouns take on
+different meanings, depending on the individual.
+
+When examining the words used by a suspect, the investigator
+needs to note any changes, because a "change of language reflects
+a change in reality."4 If suspects substitute a different word
+after using one word consistently, they telegraph the fact that
+something in their lives has changed. Although language changes
+can occur with any part of speech, they are observed more
+frequently with nouns.
+
+In a statement written by a suspect in a homicide investigation,
+a significant change in noun usage occurred. A young man shot his
+wife in the face with a shotgun. The woman died instantly, and
+the husband claimed the shooting was accidental. Investigators
+asked the man to write a statement of the events that occurred
+during the day of the shooting. The husband wrote a detailed
+statement, using the noun "wife" seven times to refer to his
+wife. He then wrote:
+
+    "...I lost control of the gun. I sensed that the barrel was   
+     pointing in Louise's direction and I reacted by grabbing at  
+     the gun to get it back under control. When I did this the g  
+     gun discharged. It went off once and I looked over and saw   
+     blood on Louise's face."
+
+What caused the husband to start using "Louise," his wife's first
+name? Did this occur at a significant point in the narrative?
+
+Prior to this point, investigators had normed the husband as
+using the noun "wife." When the spouse went to church with her
+husband, she was "my wife." When she later called to her husband,
+she was "my wife." But when the barrel of the gun was pointing in
+her direction and when there was blood on her face, two critial
+points in the statement, the spouse was no longer referred to as
+"my wife." She became Louise.
+
+Investigators have determined that perpetrators find it nearly
+impossible to admit to harming a family member. The husband in
+this case could not admit that he had killed his wife. He removed
+the family relationship by substituting the name "Louise."
+
+The husband also failed to introduce Louise to the reader. After
+using the noun "wife" seven times, the name "Louise" suddenly
+appears. The reader does not know    for certain who Louise is.
+It only can be assumed that Louise is the wife, but the husband
+gave no proper introduction, such as "my wife, Louise."
+
+The norm for healthy relationships is a proper, clear
+introduction. But in tumultuous relationships, introductions
+often are confusing or  missing completely. The lack of a proper
+introduction most likely indicates a poor relationship between
+the husband and his wife. Knowledge of this prior to the
+interview could assist investigators in uncovering the truth.
+
+
+Verbs
+
+Verbs express action, either in the past, present, or future. In
+statement analysis, the tense of the verb is of utmost
+importance. When analyzing statements, investigators  need to
+concentrate on the tense of the verbs used. In a truthful
+statement, the use of the past tense is the norm, because by the
+time a person relates the event, it has already occurred.
+
+For example, the following statement typifies the norm:
+
+   "It happened Saturday night. I went out on my back deck to     
+    water the plants. It was almost dark. A man ran out of the    
+    bushes. He came onto the deck, grabbed me and knocked me      
+    down."
+
+The next statement shows deviation from the norm:
+
+    "It happened Saturday night. I went out on my back deck to    
+     water the plants. It was almost dark. A man runs out of the  
+     bushes. He comes onto the deck, grabs me and knocks me       
+     down."
+
+The shift to present tense is significant, because events
+recalled from memory should be stated by using the past tense.
+The change to present tense could indicate deception. Knowing
+this, an investigator interviewing the victim of the second
+statement is forewarned that the account may be fabricated.
+
+The use of past or present tense also is significant when
+referring to missing persons. In such cases, the norm is to
+describe the person in the present tense, as in, "I just pray
+that Jenny is all right."
+
+When children are missing, in the parents' hearts and minds, the
+children remain alive, sometimes long after the point of reason.
+As evidenced in the Susan Smith case, use of past tense almost
+immediately after the alleged abduction showed a significant
+deviation from the norm.
+
+EXTRANEOUS INFORMATION
+
+Extraneous information in a statement also can provide clues to
+deception. A truthful person with nothing to hide, when asked the
+question, "What happened," will recount the events
+chronologically and concisely. Any information given that does
+not answer this question is extraneous.
+
+People involved in crimes may feel the need to justify their
+actions. In such cases, the information in the statements will
+not follow a logical time frame or will skirt what really
+happened. They also may include more information than is
+necessary to tell the story. In such instances, investigators
+should scrutinize this extraneous information and ques-tion why
+this person felt the need to include it.
+
+For example, in a homicide investigation involving a young woman
+shot by her husband, the husband told police officers that he was
+cleaning his gun when it accidentally discharged. Investigators
+then asked the husband to write a statement about his actions on
+the day he shot his wife. He provided a detailed statement,
+writing at length about the rust on his gun and a previous
+hunting trip. He failed, however, to describe fully his
+activities on this specific day. The amount of extraneous
+information prompted the investigator to view the  husband as a
+suspect.
+
+LACK OF CONVICTION
+Another important factor in statement analysis is a person's  
+lack of conviction. When analyzing a statement, investigators
+should note if the person feigns a loss of memory by repeatedly
+inserting "I don't remember" or "I can't recall."
+
+They also should look to see if the person hedges during the
+narrative by using such phrases as "I think," "I believe," "to
+the best of my knowledge," or "kind of." These phrases, also
+called qualifiers, serve to temper the action about to be
+described, thereby discounting the message before it even is
+transmitted.5 Clearly, the person giving the statement is
+avoiding commitment, and warning bells should ring in the
+investigator's ears.
+
+The following is a transcript of an oral statement of a college
+student who reported that a man broke into her apartment at 3:30
+a.m. and raped her. A statement regarding such a traumatic
+experience should brim with conviction, which this statement
+clearly lacks.
+
+   "He grabbed me and held a knife to my throat. And when I woke  
+    up and I was, I mean I was really asleep and I didn't know    
+    what was going on, and I kind of you know I was scared and I  
+    kind of startled when I woke up, You know, You know I was     
+    startled and he, he told, he kept telling me to shut up and   
+    he asked me if I could feel the knife."
+
+It is important to consider the phrase, "I kind of startled when
+I woke up." Certainly, this is not a normal reaction for a woman
+who awakens in the middle of the night to see an unknown man at
+her bed and to feel a knife at her throat. The word "terrified"
+more appropriately comes to mind. Using the words "kind of
+startled" shows a gross deviation from the expected normal
+reaction of terror.
+
+Another example of lack of conviction can be found in a written
+statement given by a relative of a woman who mysteriously
+disappeared. Investigators asked the missing woman's
+sister-in-law to recount the activities that took place on the
+weekend of the disappearance. After claiming memory lapses and
+showing a general lack  of specificity, the sister-in-law ended
+her statement with:
+
+    "...that was about it. These were my actions on the weekend   
+     to the best I can recall."
+
+Any investigator reading the above statement should seriously
+question whether the events were described accurately and
+completely.
+
+BALANCE OF THE STATEMENT
+
+A statement given by a suspect or an alleged victim should be
+examined by investigators for overall balance. Statements should
+be more than just a series of details. They need to sound like an
+account of the event.
+
+A truthful statement has three parts. The first part details what
+was going on before the event occurred; it places the event in
+context. The second part describes the occurrence itself, i.e.,
+what happened during the theft, the rape, the fire, etc. The last
+part tells what occurred after the event, including actions and
+emotions, and should be at least as long as the first part.
+
+The more balanced the three parts of the statement, the greater
+the probability that the statement is true.6 A statement
+containing the same number of lines in the before, during, and
+after parts, i.e., 33 1/3 percent in each part, indi-cates truth,
+although some degree of variation from perfect balance can be
+expected.
+
+If any part of a statement is incomplete or missing altogether,
+then the statement is probably false. The following breakdown of
+a statement written by a man whose home burned shows a deviation
+too great from the balanced norm. The man provided a 56-line
+account of what happened that day, divided as follows:
+
+BEFORE the fire:  33 lines -59.0%
+DURING the fire:  16 lines - 28.5%
+AFTER the fire:   7 lines - 12.5%.
+
+Investigators concluded that the above distribution indicates
+deception, because the three parts of the statement are clearly
+out of balance. The "before" section is too long and the "after"
+section is too short.
+
+Examination of the statement revealed that in the first part, the
+writer provided too much information totally unrelated to the
+fire.  This signaled the investigators to ask themselves, "Is the
+writer stalling or trying to justify his actions?"
+
+Also, the statement contained sparse information on what happened
+after the fire and lacked any indication of emotion. There was no
+sign of anger, shock, or sense of loss. The writer, who showed no
+concern about the consequences of the fire, ultimately confessed
+to setting it.
+
+CONCLUSION
+
+Statements contain a wealth of information far beyond what the
+suspect or alleged victim intends to communicate. Fortunately,
+investigators can use this information to their benefit.
+
+Statement analysis provides investigators with vital background
+data and details about relationships to explore during the
+interview process. It also can determine whether the intent of
+the statement is to convey or to convince, that is, to convey the
+truth or to convince through deception.7 Armed with this
+knowledge, investigators can enter the interview room with
+increased confidence to identify the perpetrator and gain a
+confession.
+__________________
+
+Endnotes
+
+1 The Washington Post, November 5, 1994, A15.
+
+2 The Washington Post, July 26, 1995, A7.
+
+3 Udo Undeutsch published this hypothesis in German in 1967. It
+also was reported in "The Development of Statement Reality
+Analysis," Credibility Assessment, ed. John C. Yuille (The
+Netherlands: Kluwer Academic Publishers, NATO ASI Series, 1989).
+The Germans generally are credited with the advancement of
+statement analysis for investigative purposes. German
+psychologists devised a system to assess the credibility of
+statements made by children in child abuse cases. Called
+criteria-based content analysis, the technique became mandated in
+German courts in 1954 in cases involving a disputed allegation of
+sexual abuse of a child.
+
+4 Avinoam Sapir, Scientific Content Analysis (SCAN) (Phoenix, AZ:
+Laboratory of Scientific Interrogation, 1987), 52.
+
+5 Walter Weintrab, Verbal Behavior in Everyday Life (New York,
+NY: Springer Publishing Co., 1989), 13.
+
+6 Don Rabon, Investigative Discourse Analysis (Durham, NC:
+Carolina Academic Press, 1994), 17.
+
+7 Ibid., 35.
+
+                      ________________________
