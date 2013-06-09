@@ -1,0 +1,3 @@
+[25208:0609/194151:ERROR:zygote_host_impl_linux.cc(146)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
+[25208:0609/194152:ERROR:browser_main_loop.cc(185)] Gdk: gdk_window_set_icon_list: icons too large
+[25258:0609/194152:ERROR:renderer_main.cc(203)] Running without renderer sandbox

@@ -1,0 +1,6 @@
+[submodule "checkouts/cmusphinx"]
+	path = checkouts/cmusphinx
+	url = git@github.com:supersym/cmusphinx.git
+[submodule "checkouts/vision"]
+	path = checkouts/vision
+	url = git@github.com:clojens/vision.git

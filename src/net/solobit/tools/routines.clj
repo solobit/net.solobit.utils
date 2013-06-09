@@ -32,7 +32,7 @@
 (defrecord Employee [name surname])
 
 
-; Namescape 2 in "my/queries.clj", where a defrecord is used
+; Namespace 2 in "my/queries.clj", where a defrecord is used
 (ns my.queries
   (:require my.data)
   (:import [my.data Employee]))
