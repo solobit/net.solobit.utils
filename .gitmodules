@@ -7,3 +7,6 @@
 [submodule "checkouts/storm-starter"]
 	path = checkouts/storm-starter
 	url = git@github.com:clojens/storm-starter.git
+[submodule "checkouts/rincanter"]
+	path = checkouts/rincanter
+	url = git@github.com:clojens/rincanter.git
