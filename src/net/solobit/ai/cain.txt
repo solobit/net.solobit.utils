@@ -1,0 +1,11 @@
+
+Core AI Next
+
+
+There is a clear distinction between:
+
+* passive process (e.g. detection of deception based on perception, decission, statistical inference, vision, hearing, listening, sensing)
+* active process (e.g. performing deception based on a plan or set of concrete actions and advices based on gathered information)
+
+
+
