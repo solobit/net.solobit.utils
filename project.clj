@@ -48,6 +48,8 @@
        ;; Data
        ;;
 
+       ;; realtime computation
+       [storm "0.9.0-wip17"]
        [net.mikera/core.matrix "0.7.2"]
        ;[fleetdb "0.3.1"] ; schema free db for agile development
        [org.clojure/data.generators "0.1.0"]

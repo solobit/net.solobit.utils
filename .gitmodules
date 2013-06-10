@@ -4,3 +4,6 @@
 [submodule "checkouts/vision"]
 	path = checkouts/vision
 	url = git@github.com:clojens/vision.git
+[submodule "checkouts/storm-starter"]
+	path = checkouts/storm-starter
+	url = git@github.com:clojens/storm-starter.git
